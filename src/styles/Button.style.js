@@ -7,6 +7,8 @@ export const Button = styled.button`
   background-color: ${(props) => props.color};
   border: ${(props) => props.border};
   color: ${(props) => props.textColor};
+  cursor: pointer;
+  width: 100%;
 
   &:hover {
     background-color: ${(props) => props.backgroundHoverColor};

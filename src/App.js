@@ -1,17 +1,25 @@
-import { Link } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 import Contact from './pages/Contact'
 import Apartments from './pages/Apartment'
 import Activities from './pages/Activities'
 import Home from './pages/Home'
 import {Application} from './styles/App.style'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {useState} from 'react'
 
 function App() {
+  const [sidebar, setSidebar] = useState(false)
+
+  const toggleSidebar = () => {
+    setSidebar(!sidebar)
+  }
+
   return (
     <Router>
       <Application className="App">
-        <Navbar />
+        <Navbar toggleSidebar={toggleSidebar} />
+        <Sidebar sidebar={sidebar} toggleSidebar={toggleSidebar} />
         <Switch>
           <Route path="/apartments" component={Apartments} ></Route>
           <Route path="/activities" component={Activities} ></Route>

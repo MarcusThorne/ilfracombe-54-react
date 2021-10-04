@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Icon = styled.div`
   width: 3rem;
   display: flex;
+  margin-left: 1rem;
 
   img {
     width: 5rem;
     height: 3rem;
-    margin-right: 1rem;
     margin-top: 10px;
   }
 

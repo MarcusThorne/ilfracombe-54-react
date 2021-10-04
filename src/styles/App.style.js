@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import style from 'styled-components'
 
 export const Application = styled.div`
   margin: 0;

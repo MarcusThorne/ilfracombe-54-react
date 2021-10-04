@@ -1,12 +1,13 @@
-import { AvailabilityForm } from '../styles/Availability.style'
-import { Option } from '../styles/Availability.style'
-import { Options } from '../styles/Availability.style'
+import { AvailabilityForm, Option, Icon, Options, AvailabilityTitle } from '../styles/Availability.style'
 import { Button } from '../styles/Button.style'
 
 function Availability() {
   return (
     <AvailabilityForm>
-      <h2>Check Availability</h2>
+      <AvailabilityTitle>
+        <h2>Check Availability</h2>
+        <Icon rotate="rotate(270deg)" />
+      </AvailabilityTitle>
 
       <Options>
         <Option>
