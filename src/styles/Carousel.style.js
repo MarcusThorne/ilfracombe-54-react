@@ -3,7 +3,7 @@ import { BsChevronLeft } from 'react-icons/bs'
 
 export const Image = styled.img`
   width: 50%;
-  height: 15rem;
+  height: 20rem;
   object-fit: cover;
 `
 export const Title = styled.div`

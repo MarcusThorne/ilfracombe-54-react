@@ -18,7 +18,7 @@ export const SidebarWrap = styled.div`
 export const CloseSidebar = styled(FaTimes)`
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 3rem;
   font-size: 1.6rem;
   cursor: pointer;
 `
