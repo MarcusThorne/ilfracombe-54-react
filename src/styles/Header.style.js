@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import img from '../img/harbour.png'
 
 export const HeaderWrap = styled.div`
-  background-image: url(${img});
+  background-image: url(${props => props.image});
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -33,7 +32,7 @@ export const HeaderContent = styled.div`
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
     margin-top: -10px;
   }

@@ -1,9 +1,20 @@
-import React from 'react'
+import { AboutTitle } from '../styles/About.style'
+import { HeaderContent, HeaderWrap } from '../styles/Header.style'
+import img from '../img/apartment.png'
 
 function Apartment() {
   return (
     <div>
-      <h1>Apartments Page</h1>
+      <HeaderWrap image={img}>
+        <HeaderContent>
+          <h1>A<span>partments</span></h1>
+
+        </HeaderContent>
+      </HeaderWrap>
+      <AboutTitle>
+        <h1><span>Perfectly</span> combined comfort</h1>
+        <p>We've turned this beautiful space into 3 spacious apartments. Each apartment can be rented seperately or together for larger groups. Get in touch if you'd like to talk about renting all 3!</p>
+      </AboutTitle>
     </div>
   )
 }

@@ -21,6 +21,7 @@ export const AboutTitle = styled.div`
   padding: 2rem;
   margin: 1rem;
   margin-bottom: -1rem;
+  max-width: 34rem;
 
   h1 {
     font-weight: 400;
@@ -34,9 +35,15 @@ export const AboutTitle = styled.div`
 export const AboutCards = styled.div`
   margin: 1rem;
   margin-bottom: 5rem;
+  max-width: 30rem;
+
+  @media(min-width: 570px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   div {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;

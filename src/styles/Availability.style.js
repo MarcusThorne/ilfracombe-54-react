@@ -6,7 +6,7 @@ export const AvailabilityForm = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 1rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -23,6 +23,12 @@ export const Options = styled.div`
   flex-direction: column;
   margin: 3rem 0;
   width: 100%;
+
+  @media(min-width: 425px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
 `
 
 export const Option = styled.div`
@@ -40,11 +46,12 @@ export const Option = styled.div`
 export const Icon = styled(FaAirbnb)`
   color: #FF385C;
   font-size: 18px;
+  margin: 0 1rem;
 `
 
 export const AvailabilityTitle = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
 `
