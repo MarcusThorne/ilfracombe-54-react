@@ -3,6 +3,7 @@ import Availability from '../components/Availability'
 import Carousel from '../components/Carousel'
 import About from '../components/About'
 import Testimonials from '../components/Testimonials'
+import Hygiene from '../components/Hygiene'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Carousel />
       <About />
       <Testimonials />
+      <Hygiene />
     </>
   )
 }
