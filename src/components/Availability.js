@@ -2,6 +2,29 @@ import { AvailabilityForm, Option, Icon, Options, AvailabilityTitle } from '../s
 import { Button } from '../styles/Button.style'
 
 function Availability() {
+  var submitButton = document.querySelector("#availabilitySubmit");
+
+  if (submitButton) {
+    submitButton.addEventListener("click", () => {
+      var apartmentNumber = document.querySelector("#apartmentNumber").value || "";
+      var checkIn = document.querySelector("#checkIn").value || "";
+      var checkOut = document.querySelector("#checkOut").value || "";
+      var guests = document.querySelector("#guests").value || "";
+
+      var link =
+        "https://www.airbnb.co.uk/rooms/" +
+        apartmentNumber +
+        "?&guests=" +
+        guests +
+        "&check_in=" +
+        checkIn +
+        "&check_out=" +
+        checkOut;
+
+      window.open(link);
+    });
+  }
+
   return (
     <AvailabilityForm>
       <AvailabilityTitle>

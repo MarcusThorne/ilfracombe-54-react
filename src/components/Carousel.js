@@ -1,9 +1,11 @@
 import React from 'react'
 import Slider from "react-slick";
-import Images from './ApartmentImages'
+import ApartmentOneImages from './ApartmentOneImages'
+import ApartmentTwoImages from './ApartmentTwoImages'
+import ApartmentThreeImages from './ApartmentThreeImages'
 import { Image, Title, Icon, CarouselWrap } from '../styles/Carousel.style'
 
-function Carousel() {
+function Carousel({title, floor}) {
   const settings = {
     dots: true,
     infinite: true,
@@ -15,10 +17,24 @@ function Carousel() {
     autoplay: true,
   };
 
+  const AllImages = ApartmentOneImages + ApartmentTwoImages + ApartmentThreeImages
+
+  const findImages = () => {
+    if(floor === 1){
+      return(ApartmentOneImages)
+    } else if (floor === 2){
+      return(ApartmentTwoImages)
+    } else if(floor === 3) {
+      return(ApartmentThreeImages)
+    } else {
+      return(AllImages)
+    }
+  }
+
   return (
     <CarouselWrap>
       <Title>
-        <h1>Apartments</h1>
+        <h1>{title}</h1>
         <div>
           <Icon rotate="0" />
           <Icon />
@@ -26,7 +42,7 @@ function Carousel() {
       </Title>
 
       <Slider {...settings}>
-        {Images.map(img =>
+        {findImages().map(img =>
           <Image src={img.image} alt="image" />
         )}
       </Slider>

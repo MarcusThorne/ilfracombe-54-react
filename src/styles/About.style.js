@@ -7,7 +7,6 @@ export const AboutWrap = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +19,7 @@ export const AboutTitle = styled.div`
   color: white;
   padding: 2rem;
   margin: 1rem;
-  margin-bottom: -1rem;
+  margin-bottom: 1rem;
   max-width: 34rem;
 
   h1 {
