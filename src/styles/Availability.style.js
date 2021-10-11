@@ -24,7 +24,7 @@ export const Options = styled.div`
   margin: 3rem 0;
   width: 100%;
 
-  @media(min-width: 425px) {
+  @media(min-width: 426px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;

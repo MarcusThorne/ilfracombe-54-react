@@ -6,7 +6,7 @@ export const HeaderWrap = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 90vh;
+  height: ${props => props.height};
   display: flex;
   justify-content: center;
   align-items: center;

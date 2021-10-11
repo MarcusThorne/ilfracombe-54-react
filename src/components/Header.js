@@ -2,9 +2,9 @@ import { HeaderWrap, HeaderContent, HeaderLinks } from '../styles/Header.style'
 import { Button } from '../styles/Button.style'
 import img from '../img/harbour.png'
 
-function Header() {
+function Header({height}) {
   return (
-    <HeaderWrap image={img} >
+    <HeaderWrap image={img} height={height} >
       <HeaderContent >
         <h1>Ilfracombe <span>No. 54</span></h1>
         <p>Three Holiday Apartments</p>

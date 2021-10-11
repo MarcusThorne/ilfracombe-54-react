@@ -8,7 +8,7 @@ import Hygiene from '../components/Hygiene'
 function Home() {
   return (
     <>
-      <Header />
+      <Header height="90vh" />
       <Availability />
       <Carousel />
       <About />
