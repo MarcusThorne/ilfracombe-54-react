@@ -10,10 +10,6 @@ class YoutubeVideo extends React.Component {
         // https://developers.google.com/youtube/player_parameters
         loop: 1,
         playlist: "XHxU46jdFFc",
-        playlist: "XHxU46jdFFc",
-        playlist: "XHxU46jdFFc",
-        playlist: "XHxU46jdFFc",
-        playlist: "XHxU46jdFFc",
         mute: 1,
         start: 6,
         iv_load_policy: 3,

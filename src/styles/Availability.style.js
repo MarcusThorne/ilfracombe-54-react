@@ -1,15 +1,22 @@
 import styled from 'styled-components'
 import { FaAirbnb } from 'react-icons/fa'
 
+export const AvailabilityWrap = styled.div`
+  border: 3px solid black;
+  margin-top: 1rem;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+`
+
 export const AvailabilityForm = styled.div`
-  border: 3px solid rgb(20, 20, 20);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 1rem auto;
-  padding: 1rem;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
+  padding-bottom: 1rem;
   border-radius: 4px;
+  height: ${props => props.height};
+  overflow: hidden;
+  padding: ${props => props.padding};
 
   h2 {
     margin: auto 0;
