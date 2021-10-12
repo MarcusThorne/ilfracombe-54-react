@@ -2,7 +2,6 @@ import { AvailabilityWrap, AvailabilityForm, Option, Icon, Options, Availability
 import { Button } from '../styles/Button.style'
 import { AiOutlineDown } from 'react-icons/ai'
 import { useState } from 'react'
-import AnimateHeight from 'react-animate-height'
 
 function Availability() {
   var submitButton = document.querySelector("#availabilitySubmit");
