@@ -9,7 +9,7 @@ function Apartment() {
     <div>
       <HeaderWrap image={img} height="70vh" >
         <HeaderContent>
-          <h1 style={{ fontSize: "30px" }}>A<span style={{ fontSize: "30px" }}>partments</span></h1>
+          <h1 style={{ fontSize: "36px", fontWeight: "500" }}><span style={{ fontSize: "48px" }}>A</span>partments</h1>
         </HeaderContent>
       </HeaderWrap>
       <AboutTitle style={{ margin: "0" }}>

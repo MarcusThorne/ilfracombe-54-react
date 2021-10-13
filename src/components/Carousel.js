@@ -7,7 +7,7 @@ import { Image, Title, Icon, CarouselWrap } from '../styles/Carousel.style'
 
 function Carousel({title, floor}) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -15,6 +15,9 @@ function Carousel({title, floor}) {
     centerMode: true,
     centerPadding: '30px',
     autoplay: true,
+    focusOnSelected: true,
+    swipe: true,
+    swipeToSlide: true
   };
 
   const findImages = () => {

@@ -32,9 +32,14 @@ export const AboutTitle = styled.div`
 `
 
 export const AboutCards = styled.div`
-  margin: 1rem;
+  /* margin: 1rem; */
   margin-bottom: 5rem;
   max-width: 30rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 
   @media(min-width: 570px) {
     display: grid;
@@ -45,8 +50,24 @@ export const AboutCards = styled.div`
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0 2rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    svg {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 
   h1 {

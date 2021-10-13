@@ -13,7 +13,7 @@ export const Title = styled.div`
   padding: 0 1rem;
 
   h1 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px;
   }
 

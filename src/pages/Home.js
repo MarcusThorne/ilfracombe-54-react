@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <Header height="90vh" />
-      <Availability color="rgb(19, 27, 35)" backgroundHoverColor="rgb(44, 50, 56)"/>
+      <Availability color="rgb(19, 27, 35)" backgroundHoverColor="rgb(44, 50, 56)" iconColor="black" />
       <Carousel title="Apartments" margin="2rem 0" />
       <About />
       <Testimonials />

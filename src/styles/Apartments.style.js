@@ -1,15 +1,26 @@
 import styled from 'styled-components'
 import { ImCross } from 'react-icons/im'
 
-export const ApartmentTitle = styled.h2`
-  background-color: #131B23;
+export const CarouselTitle = styled.div`
+  position: relative;
+`
+
+export const ApartmentTitle = styled.div`
+  background-color: rgba(19, 27, 35, 0.9);
   color: white;
   font-weight: 400;
   padding: 0 1rem;
-  margin-top: -0.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  bottom: 18px;
+  z-index: 50;
+  font-size: 18px;
+
+  p {
+    margin-right: 2rem;
+  }
 `
 
 export const ApartmentText = styled.p`

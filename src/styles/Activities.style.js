@@ -16,8 +16,8 @@ export const Info = styled(AiOutlineInfoCircle)`
 
 export const ActivityWrap = styled.div`
   background-image: url(${props => props.image});
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -50,3 +50,7 @@ export const ActivitiesWrap = styled.div`
   align-items: center;
   flex-direction: column;
 `
+
+Next.defaultProps = {
+  color: "white",
+}

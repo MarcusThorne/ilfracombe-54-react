@@ -1,9 +1,9 @@
-import { AvailabilityWrap, AvailabilityForm, Option, Icon, Options, AvailabilityTitle } from '../styles/Availability.style'
+import { AvailabilityWrap, Next, AvailabilityForm, CheckIn, Option, Op, Icon, Options, AvailabilityTitle } from '../styles/Availability.style'
 import { Button } from '../styles/Button.style'
 import { AiOutlineDown } from 'react-icons/ai'
 import { useState } from 'react'
 
-function Availability({ color, backgroundHoverColor }) {
+function Availability({ color, backgroundHoverColor, iconColor }) {
   var submitButton = document.querySelector("#availabilitySubmit");
 
   if (submitButton) {
@@ -31,7 +31,7 @@ function Availability({ color, backgroundHoverColor }) {
 
   return (
     <AvailabilityWrap>
-      <AvailabilityForm height={show ? "max-content" : "2rem"} padding={show ? "1rem" : ""} >
+      <AvailabilityForm height={'max-content'} >
         <AvailabilityTitle>
           <h2>Check Availability</h2>
           <Icon rotate="rotate(270deg)" />
@@ -39,40 +39,38 @@ function Availability({ color, backgroundHoverColor }) {
 
         <Options>
           <Option>
-            <label>Apartment No.</label>
-            <select id="apartmentNumber">
+            <select id="apartmentNumber" placeholder="Apartment Number" >
               <option value="34943853">Apartment 1</option>
               <option value="23996662">Apartment 2</option>
               <option value="34943970">In The Attic</option>
             </select>
           </Option>
 
-          <Option>
-            <label>Check In</label>
-            <input type="date" id="checkIn" placeholder="dd/mm/yyyy" />
-          </Option>
+          <CheckIn>
+            <Op>
+              <input type="date" id="checkIn" placeholder="dd/mm/yyyy" />
+            </Op>
+            <Next />
+            <Op>
+              <input type="date" id="checkOut" placeholder="dd/mm/yyyy" />
+            </Op>
+          </CheckIn>
 
           <Option>
-            <label>Check Out</label>
-            <input type="date" id="checkOut" placeholder="dd/mm/yyyy" />
-          </Option>
-
-          <Option>
-            <label>Guests</label>
             <select id="guests">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6 Guests</option>
             </select>
           </Option>
         </Options>
 
-        <Button id="availabilitySubmit" padding="1rem 4rem" fontSize="18px">Search</Button>
+        <Button id="availabilitySubmit" padding="1rem 4rem" fontSize="18px" style={{borderRadius: "4px"}}>Search</Button>
       </AvailabilityForm>
-      <Button color={color} backgroundHoverColor={backgroundHoverColor} onClick={() => setShow(show = !show)}>Show <AiOutlineDown/></Button>
+      {/* <Button style={{borderRadius: "10px", display:"flex", justifyContent:"center", alignItems: "center"}} color={color} backgroundHoverColor={backgroundHoverColor} onClick={() => setShow(show = !show)}>{ show ? "Hide" : "Show" }<AiOutlineDown style={{fontSize: "20px", marginLeft: "1rem"}} /></Button> */}
     </AvailabilityWrap>
   )
 }

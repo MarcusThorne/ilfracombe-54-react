@@ -9,7 +9,7 @@ export const Button = styled.button`
   color: ${(props) => props.textColor};
   cursor: pointer;
   width: 100%;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
   margin: ${props => props.margin};
 
   &:hover {

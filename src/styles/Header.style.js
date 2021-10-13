@@ -12,6 +12,21 @@ export const HeaderWrap = styled.div`
   align-items: center;
 `
 
+export const Or = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    width: 100%;
+  }
+
+  i {
+    margin: 0 1rem;
+  }
+`
+
 export const HeaderContent = styled.div`
   width: max-content;
   margin-bottom: 10rem;

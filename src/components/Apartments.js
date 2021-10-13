@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
-import { ApartmentText, ApartmentTitle, HiddenInfo, Cross } from '../styles/Apartments.style'
+import { ApartmentText, ApartmentTitle, HiddenInfo, Cross, ApartmentWrap, CarouselTitle } from '../styles/Apartments.style'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { Button } from '../styles/Button.style'
 import { useState } from 'react'
@@ -17,7 +17,7 @@ function Apartments() {
       toggle: false
     }, {
       id: 2,
-      title: "Apartmnet Two",
+      title: "Apartment Two",
       floor: "Second Floor",
       description: "The apartment is the 1st floor apartment in a Victorian 'Gentleman's Residence'. The rooms are spacious with a kitchen, equipped with a fridge, cooker and microwave. There is room for 6 to sit around the table. There are 2 bedrooms, one with kingsize bed, the other is a twin room, which can be joined to make a super king, if requested in advance. There is also a sofa bed in the lounge. Well behaved dogs are welcome. There is a hardstanding at the front of the property large enough for 4 cars.",
       space: "This is a first floor apartment in an old Victorian building that has been divided into 3 apartments and refurbished to a high standard. The whole house is available for booking on air B and B.",
@@ -49,17 +49,19 @@ function Apartments() {
   return (
     <>
       {apartmentData.map(apartment =>
-        <div>
-          <Carousel title={apartment.title} floor={apartment.id} />
-          <ApartmentTitle>
-            <p>{apartment.floor}</p>
-            <AiOutlineInfoCircle onClick={() => toggleInfo(apartment.id)} />
-          </ApartmentTitle>
+        <>
+          <CarouselTitle>
+            <Carousel title={apartment.title} floor={apartment.id} ></Carousel>
+            <ApartmentTitle>
+              <p>{apartment.floor}</p>
+              <AiOutlineInfoCircle onClick={() => toggleInfo(apartment.id)} />
+            </ApartmentTitle>
+          </CarouselTitle>
           <ApartmentText >
             {apartment.description}
             <Button style={{marginTop: "2rem"}} >Book Now</Button>
           </ApartmentText>
-          <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem 0"}}></div>
+          <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem"}}></div>
           <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
             <div>
               <Cross />
@@ -69,7 +71,7 @@ function Apartments() {
               <p>{apartment.guestAccess}</p>
             </div>
           </HiddenInfo>
-        </div>
+        </>
       )}
     </>
   )
