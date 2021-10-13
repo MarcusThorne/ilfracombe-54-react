@@ -17,8 +17,6 @@ function Carousel({title, floor}) {
     autoplay: true,
   };
 
-  const AllImages = [ApartmentOneImages.map(image => image), ApartmentTwoImages.map(image => image), ApartmentThreeImages.map(image => image)]
-
   const findImages = () => {
     if(floor === 1){
       return(ApartmentOneImages)
@@ -27,7 +25,7 @@ function Carousel({title, floor}) {
     } else if(floor === 3) {
       return(ApartmentThreeImages)
     } else {
-      return(AllImages)
+      return (ApartmentThreeImages)
     }
   }
 

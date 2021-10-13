@@ -32,6 +32,7 @@ export const Icon = styled(BsChevronLeft)`
 export const CarouselWrap = styled.div`
   width: 100%;
   overflow: hidden;
+  margin: ${props => props.margin};
 `
 
 Icon.defaultProps = {

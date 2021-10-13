@@ -6,18 +6,17 @@ export const ApartmentTitle = styled.h2`
   color: white;
   font-weight: 400;
   padding: 0 1rem;
-  margin-top: 0;
+  margin-top: -0.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
 
 export const ApartmentText = styled.p`
-  box-shadow: 1px 1px 10px rgba(50,50,50,0.2);
+  /* box-shadow: 1px 1px 10px rgba(50,50,50,0.2); */
   border-radius: 10px;
   margin: 1rem;
-  margin-top: -2rem;
-  padding: 2rem;
+  padding: 1rem;
   overflow: hidden;
   height: ${props => props.height};
 `

@@ -9,8 +9,8 @@ function Home() {
   return (
     <>
       <Header height="90vh" />
-      <Availability />
-      <Carousel />
+      <Availability color="rgb(19, 27, 35)" backgroundHoverColor="rgb(44, 50, 56)"/>
+      <Carousel title="Apartments" margin="2rem 0" />
       <About />
       <Testimonials />
       <Hygiene />

@@ -57,8 +57,9 @@ function Apartments() {
           </ApartmentTitle>
           <ApartmentText >
             {apartment.description}
-            <Button style={{marginTop: "1rem"}}>Book Now</Button>
+            <Button style={{marginTop: "2rem"}} >Book Now</Button>
           </ApartmentText>
+          <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem 0"}}></div>
           <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
             <div>
               <Cross />

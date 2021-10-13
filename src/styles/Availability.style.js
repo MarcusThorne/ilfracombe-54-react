@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import { FaAirbnb } from 'react-icons/fa'
 
 export const AvailabilityWrap = styled.div`
-  border: 3px solid black;
-  margin-top: 1rem;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  /* border: 3px solid black; */
+  margin-bottom: 2rem;
+  /* box-shadow: 1px 1px 10px rgba(0,0,0,0.2); */
 `
 
 export const AvailabilityForm = styled.div`
@@ -43,10 +43,14 @@ export const Option = styled.div`
   flex-direction: column;
   align-items: start;
   font-size: 16px;
+  width: 100%;
+  overflow: hidden;
 
   input, select {
     width: 100%;
     height: 3rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    /* padding: 0 1rem; */
   }
 `
 

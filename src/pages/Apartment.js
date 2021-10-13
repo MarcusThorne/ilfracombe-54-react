@@ -10,14 +10,13 @@ function Apartment() {
       <HeaderWrap image={img} height="70vh" >
         <HeaderContent>
           <h1 style={{ fontSize: "30px" }}>A<span style={{ fontSize: "30px" }}>partments</span></h1>
-
         </HeaderContent>
       </HeaderWrap>
-      <Availability />
-      <AboutTitle>
+      <AboutTitle style={{ margin: "0" }}>
         <h1><span>Perfectly</span> combined comfort</h1>
         <p>We've turned this beautiful space into 3 spacious apartments. Each apartment can be rented seperately or together for larger groups. Get in touch if you'd like to talk about renting all 3!</p>
       </AboutTitle>
+      <Availability color="rgb(19, 27, 35)" backgroundHoverColor="rgb(44, 50, 56)" />
       <Apartments />
     </div>
   )

@@ -3,7 +3,7 @@ import { Button } from '../styles/Button.style'
 import { AiOutlineDown } from 'react-icons/ai'
 import { useState } from 'react'
 
-function Availability() {
+function Availability({ color, backgroundHoverColor }) {
   var submitButton = document.querySelector("#availabilitySubmit");
 
   if (submitButton) {
@@ -72,7 +72,7 @@ function Availability() {
 
         <Button id="availabilitySubmit" padding="1rem 4rem" fontSize="18px">Search</Button>
       </AvailabilityForm>
-      <Button onClick={() => setShow(show = !show)}>Show <AiOutlineDown/></Button>
+      <Button color={color} backgroundHoverColor={backgroundHoverColor} onClick={() => setShow(show = !show)}>Show <AiOutlineDown/></Button>
     </AvailabilityWrap>
   )
 }
