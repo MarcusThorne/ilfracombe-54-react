@@ -56,6 +56,7 @@ export const CheckIn = styled.div`
   margin: 0.5rem 0;
   align-items: center;
   justify-content: space-between;
+  border-radius: 4px;
 `
 
 export const Op = styled.div`
@@ -63,12 +64,21 @@ export const Op = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 1rem 0.2rem;
+  position: relative;
 
   input {
     border: none;
     background-color: white;
     width: 100%;
-    font-size: 10px;
+    font-size: 8px;
+
+    @media(min-width: 375px) {
+      font-size: 12px;
+    }
+
+    @media(min-width: 425px){
+      font-size: 14px;
+    }
   }
 `
 

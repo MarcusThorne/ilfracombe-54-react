@@ -28,7 +28,7 @@ export const ActivityWrap = styled.div`
   text-shadow: 1px 1px 10px rgba(0,0,0,1);
   color: white;
   margin: 1rem 0;
-  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
   position: relative;
   border-radius: 10px;
   font-size: 30px;

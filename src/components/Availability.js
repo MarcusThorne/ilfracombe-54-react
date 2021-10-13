@@ -48,11 +48,11 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
           <CheckIn>
             <Op>
-              <input type="date" id="checkIn" placeholder="dd/mm/yyyy" />
+              <input type="date" id="checkIn" placeholder="Check In" />
             </Op>
             <Next />
             <Op>
-              <input type="date" id="checkOut" placeholder="dd/mm/yyyy" />
+              <input type="date" id="checkOut" placeholder="Check Out" />
             </Op>
           </CheckIn>
 

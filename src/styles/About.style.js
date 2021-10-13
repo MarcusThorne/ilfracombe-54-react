@@ -11,14 +11,14 @@ export const AboutWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 `
 
 export const AboutTitle = styled.div`
   background-color: rgb(19, 27, 35);
   color: white;
   padding: 2rem;
-  margin: 1rem;
+  /* margin: 1rem; */
   margin-bottom: 1rem;
   max-width: 34rem;
 
@@ -33,13 +33,18 @@ export const AboutTitle = styled.div`
 
 export const AboutCards = styled.div`
   /* margin: 1rem; */
-  margin-bottom: 5rem;
   max-width: 30rem;
-  width: 100%;
+  width: 90%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  /* background-color: rgba(255,255,255,0.8); */
+  margin: 2rem;
+  margin-bottom: 60%;
+  /* box-shadow: 1px 1px 10px rgba(0,0,0,0.2); */
+  padding: 2rem 0;
 
   @media(min-width: 570px) {
     display: grid;
@@ -47,18 +52,22 @@ export const AboutCards = styled.div`
   }
 
   div {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 1rem;
-    padding: 1rem;
-    margin: 0 2rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    /* padding-top: 1rem; */
+    /* margin: 0 2rem; */
     position: relative;
     overflow: hidden;
     text-align: center;
     transition: 0.2s;
+    width: 100%;
 
     &:hover {
       transform: scale(1.05);
+    }
+
+    h4 {
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      width: 80%;
+      margin: 1.5rem auto;
     }
 
     svg {
@@ -72,5 +81,6 @@ export const AboutCards = styled.div`
 
   h1 {
     font-size: 20px;
+    margin: 0;
   }
 `

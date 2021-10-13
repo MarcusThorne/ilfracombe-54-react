@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const Video = styled.div`
   overflow: hidden;
-  height: 16.8rem;
+  height: 20.8rem;
   background-color: black;
   position: relative;
 
   iframe {
-    height: 30rem;
-    width: 30rem;
+    height: 40rem;
+    width: 38rem;
     opacity: 0.7;
     transform: translate(-50%, -50%);
     position: absolute;
