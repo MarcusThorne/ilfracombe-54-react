@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
-import { ApartmentText, ApartmentTitle, HiddenInfo, Cross, ApartmentWrap, CarouselTitle } from '../styles/Apartments.style'
+import { ApartmentText, ApartmentTitle, HiddenInfo, Cross, CarouselTitle } from '../styles/Apartments.style'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { Button } from '../styles/Button.style'
 import { useState } from 'react'

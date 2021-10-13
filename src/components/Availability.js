@@ -1,7 +1,7 @@
 import { AvailabilityWrap, Next, AvailabilityForm, CheckIn, Option, Op, Icon, Options, AvailabilityTitle } from '../styles/Availability.style'
 import { Button } from '../styles/Button.style'
-import { AiOutlineDown } from 'react-icons/ai'
-import { useState } from 'react'
+// import { AiOutlineDown } from 'react-icons/ai'
+// import { useState } from 'react'
 
 function Availability({ color, backgroundHoverColor, iconColor }) {
   var submitButton = document.querySelector("#availabilitySubmit");
@@ -27,7 +27,7 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
     });
   }
 
-  var [ show, setShow ] = useState(false)
+  // var [ show, setShow ] = useState(false)
 
   return (
     <AvailabilityWrap>
