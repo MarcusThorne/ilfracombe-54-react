@@ -6,12 +6,17 @@ export const HygieneWrap = styled.div`
   text-align: center;
   padding: 2rem;
 
+  h1 {
+    font-size: 20px;
+    margin-bottom: -0.5rem;
+  }
+
   div {
     margin: 4rem 0;
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   img {

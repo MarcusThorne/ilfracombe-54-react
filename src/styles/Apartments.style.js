@@ -27,9 +27,25 @@ export const ApartmentText = styled.p`
   /* box-shadow: 1px 1px 10px rgba(50,50,50,0.2); */
   border-radius: 10px;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   overflow: hidden;
   height: ${props => props.height};
+  font-size: 12px;
+
+  div {
+    background-color: rgb(235,235,235);
+    padding: 1rem;
+    margin-bottom: -1.5rem;
+    margin-top: 1rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
 `
 
 export const HiddenInfo = styled.div`
@@ -61,4 +77,13 @@ export const Cross = styled(ImCross)`
   position: absolute;
   right: 1rem;
   top: 1rem;
+`
+
+export const ApartmentInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 1.5rem;
+  margin-bottom: -1rem;
 `

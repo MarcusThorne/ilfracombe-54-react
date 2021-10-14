@@ -30,11 +30,16 @@ export const Icon = styled(BsChevronLeft)`
 `
 
 export const CarouselWrap = styled.div`
-  width: 100%;
+  width: ${props => props.width};
+  margin: ${props => props.margin};
   overflow: hidden;
   margin: ${props => props.margin};
 `
 
 Icon.defaultProps = {
   rotate: "rotate(180deg)"
+}
+
+CarouselWrap.defaultProps = {
+  width: "100%"
 }

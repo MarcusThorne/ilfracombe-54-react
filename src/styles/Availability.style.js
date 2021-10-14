@@ -10,7 +10,7 @@ export const Next = styled(BsArrowRight)`
 export const AvailabilityWrap = styled.div`
   /* border: 3px solid black; */
   box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 0 auto;
   margin-bottom: 2rem;
   width: 95%;

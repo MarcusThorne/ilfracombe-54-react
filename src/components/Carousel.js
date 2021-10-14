@@ -5,7 +5,7 @@ import ApartmentTwoImages from './ApartmentTwoImages'
 import ApartmentThreeImages from './ApartmentThreeImages'
 import { Image, Title, Icon, CarouselWrap } from '../styles/Carousel.style'
 
-function Carousel({title, floor}) {
+function Carousel({title, floor, width, margin}) {
   const settings = {
     dots: false,
     infinite: true,
@@ -17,7 +17,7 @@ function Carousel({title, floor}) {
     autoplay: true,
     focusOnSelected: true,
     swipe: true,
-    swipeToSlide: true
+    swipeToSlide: true,
   };
 
   const findImages = () => {
@@ -33,7 +33,7 @@ function Carousel({title, floor}) {
   }
 
   return (
-    <CarouselWrap>
+    <CarouselWrap width={width} margin={margin} >
       <Title>
         <h1>{title}</h1>
         <div>

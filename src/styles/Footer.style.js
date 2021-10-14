@@ -5,8 +5,8 @@ export const FooterWrap = styled.div`
   padding-top: 2rem;
 
   h1 {
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 600;
   }
 
   img {

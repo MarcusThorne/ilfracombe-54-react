@@ -13,6 +13,12 @@ export const TestWrap = styled.div`
     color: #D6A449;
   }
 
+  p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 16px;
+  }
+
   div {
     display: flex;
 
