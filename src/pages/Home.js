@@ -15,8 +15,8 @@ function Home() {
         <p>We're passionate about Ilfracombe and the surrounding area. We love promoting the many thing happening in North Devon. Take a look at the activites page to find out more.</p>
       </AboutTitle>
       <Availability color="rgb(19, 27, 35)" backgroundHoverColor="rgb(44, 50, 56)" iconColor="black" />
-      <Carousel title="Apartments" margin="2rem 0" />
-      <About />
+      <Carousel title="Apartments" margin="0" />
+      <About/>
       <Testimonials />
       <Hygiene />
     </>

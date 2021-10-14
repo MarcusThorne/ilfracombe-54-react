@@ -20,10 +20,16 @@ export const AboutTitle = styled.div`
   padding: 2rem;
   /* margin: 1rem; */
   margin-bottom: 1rem;
-  max-width: 34rem;
 
   h1 {
     font-weight: 400;
+    max-width: 34rem;
+    margin: auto;
+  }
+
+  p {
+    max-width: 34rem;
+    margin: 1rem auto;
   }
 
   span {
@@ -46,9 +52,10 @@ export const AboutCards = styled.div`
   /* box-shadow: 1px 1px 10px rgba(0,0,0,0.2); */
   padding: 2rem 0;
 
-  @media(min-width: 570px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  @media(min-width: 768px) {
+    flex-direction: row;
+    max-width: 40rem;
+    align-items: stretch;
   }
 
   div {

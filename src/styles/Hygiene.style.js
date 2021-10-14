@@ -26,4 +26,13 @@ export const HygieneWrap = styled.div`
     border-radius: 50%;
     border: 2px solid white;
   }
+
+  @media(min-width: 768px){
+    display: flex;
+
+    div {
+      width: 33%;
+      margin: 1rem;
+    }
+  }
 `

@@ -43,10 +43,9 @@ export const Options = styled.div`
   margin-top: 2rem;
   width: 100%;
 
-  @media(min-width: 426px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+  @media(min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
   }
 `
 
@@ -117,5 +116,13 @@ export const AvailabilityTitle = styled.div`
 
   h2 {
     font-size: 22px;
+  }
+
+  @media(min-width: 768px){
+    h2 {
+      font-size: 26px;
+    }
+
+    max-width: 18rem;
   }
 `

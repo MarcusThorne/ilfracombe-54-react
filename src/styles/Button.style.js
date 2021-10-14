@@ -16,6 +16,10 @@ export const Button = styled.button`
     background-color: ${(props) => props.backgroundHoverColor};
     color: ${(props) => props.textHoverColor};
   }
+
+  @media(min-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 Button.defaultProps = {

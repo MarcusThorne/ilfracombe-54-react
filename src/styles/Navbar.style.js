@@ -35,11 +35,20 @@ export const NavLink = styled(Link)`
   &:hover {
     border-bottom: ${props => props.border};
   }
+
+  @media(min-width: 768px) {
+    display: flex;
+    margin: 0 1rem;
+  }
 `
 
 export const Icon = styled(FaBars)`
   font-size: 24px;
   cursor: pointer;
+
+  @media(min-width: 768px){
+    display: none;
+  }
 `
 
 NavLink.defaultProps = {

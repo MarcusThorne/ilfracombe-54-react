@@ -28,7 +28,11 @@ function Carousel({title, floor, width, margin}) {
     } else if(floor === 3) {
       return(ApartmentThreeImages)
     } else {
-      return (ApartmentThreeImages)
+      var allImages = []
+      ApartmentThreeImages.map(img => allImages.push(img))
+      ApartmentTwoImages.map(img => allImages.push(img))
+      ApartmentOneImages.map(img => allImages.push(img))
+      return(allImages)
     }
   }
 

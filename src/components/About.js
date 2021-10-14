@@ -24,11 +24,11 @@ function About() {
 
   const findIcon = (card) => {
     if(card.id === 1){
-      return(<FaMedal />)
+      return (<FaMedal style={{ color: "#FF385C"}} />)
     } else if(card.id === 2) {
-      return (<AiFillStar />)
+      return (<AiFillStar style={{ color: "#F9C034" }} />)
     } else if(card.id === 3) {
-      return (<MdVerified />)
+      return (<MdVerified style={{ color: "dodgerblue" }} />)
     } else {
       return(<MdOutlineCleaningServices />)
     }

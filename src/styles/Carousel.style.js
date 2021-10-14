@@ -20,6 +20,15 @@ export const Title = styled.div`
   div {
     display: flex;
   }
+
+  @media(min-width: 768px){
+    max-width: 40rem;
+    margin: auto;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
 `
 
 export const Icon = styled(BsChevronLeft)`
@@ -33,7 +42,6 @@ export const CarouselWrap = styled.div`
   width: ${props => props.width};
   margin: ${props => props.margin};
   overflow: hidden;
-  margin: ${props => props.margin};
 `
 
 Icon.defaultProps = {

@@ -39,17 +39,37 @@ export const HeaderContent = styled.div`
     text-transform: uppercase;
     font-weight: 600;
     margin: 0;
+
+    @media(min-width: 425px) {
+      font-size: 40px;
+    }
+
+    @media(min-width: 768px) {
+      font-size: 60px;
+    }
   }
 
   span {
     color: #d6a449;
     font-size: 25px;
+
+    @media(min-width: 425px) {
+      font-size: 30px;
+    }
+
+    @media(min-width: 768px) {
+      font-size: 50px;
+    }
   }
 
   p {
     font-size: 18px;
     margin: 0;
     margin-top: -10px;
+
+    @media(min-width: 768px) {
+      font-size: 30px;
+    }
   }
 `
 

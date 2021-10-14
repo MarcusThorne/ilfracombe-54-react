@@ -34,3 +34,7 @@ export const Copyright = styled.div`
     margin: 0;
   }
 `
+
+export const Links = styled.div`
+  display: flex;
+`
