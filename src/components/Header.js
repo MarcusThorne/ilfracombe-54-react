@@ -9,7 +9,7 @@ function Header({height}) {
         <h1>Ilfracombe <span>No. 54</span></h1>
         <p>Three Holiday Apartments</p>
         <HeaderLinks>
-          <Button color="transparent" border="black 2px solid"
+          <Button color="white" border="black 2px solid"
             textColor="rgb(20, 20, 20)" backgroundHoverColor="rgb(20, 20, 20)"
             textHoverColor="white" fontSize="14px">Book Now</Button>
           <Or><div></div><i>or</i><div></div></Or>

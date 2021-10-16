@@ -13,10 +13,13 @@ export const HygieneWrap = styled.div`
 
   div {
     margin: 4rem 0;
+    /* max-width: 10rem; */
   }
 
   p {
     font-size: 14px;
+    max-width: 20rem;
+    margin: 1rem auto;
   }
 
   img {
@@ -29,10 +32,12 @@ export const HygieneWrap = styled.div`
 
   @media(min-width: 768px){
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     div {
-      width: 33%;
-      margin: 1rem;
+      /* width: 33%; */
+      margin: 1rem 2rem;
     }
   }
 `

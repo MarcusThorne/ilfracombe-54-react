@@ -3,7 +3,7 @@ import { FaMedal } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdVerified, MdOutlineCleaningServices } from 'react-icons/md'
 import img from '../img/ilfracombe.png'
-import { AboutWrap, AboutCards } from '../styles/About.style'
+import { AboutWrap, AboutCards, AboutText } from '../styles/About.style'
 
 function About() {
   const cards = [
@@ -36,6 +36,7 @@ function About() {
 
   return (
     <AboutWrap image={img} height="100%" >
+      <AboutText>Accomplishment</AboutText>
       <AboutCards>
         {cards.map(card =>
           <div>

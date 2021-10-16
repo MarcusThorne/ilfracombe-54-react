@@ -10,6 +10,10 @@ export const NavbarWrap = styled.nav`
   top: 0;
   z-index: 100;
   width: 100%;
+
+  @media(min-width: 1024px) {
+    justify-content: space-around;
+  }
 `
 
 export const Links = styled.div`

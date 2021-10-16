@@ -5,18 +5,12 @@ export const FooterWrap = styled.div`
   padding-top: 2rem;
 
   h1 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
   }
 
   img {
     width: 5rem;
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
   }
 
   a {
@@ -36,5 +30,16 @@ export const Copyright = styled.div`
 `
 
 export const Links = styled.div`
+  @media(min-width: 530px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: start;
+  }
+`
+
+export const LinkSection = styled.div`
   display: flex;
+  flex-direction: column;
+  margin: 1rem;
 `

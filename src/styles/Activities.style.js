@@ -33,6 +33,10 @@ export const ActivityWrap = styled.div`
   border-radius: 10px;
   font-size: 30px;
 
+  @media(min-width: 768px ) {
+    margin: 1rem auto;
+  }
+
   button {
     position: absolute;
     right: 0;
@@ -49,6 +53,18 @@ export const ActivitiesWrap = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media(min-width: 768px ) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+
+  @media(min-width: 1024px ) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+  }
 `
 
 Next.defaultProps = {

@@ -22,11 +22,11 @@ export const Title = styled.div`
   }
 
   @media(min-width: 768px){
-    max-width: 40rem;
-    margin: auto;
+    max-width: 60rem;
+    margin: 2rem auto;
 
     h1 {
-      font-size: 30px;
+      font-size: 40px;
     }
   }
 `

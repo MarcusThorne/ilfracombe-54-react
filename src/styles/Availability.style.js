@@ -8,13 +8,17 @@ export const Next = styled(BsArrowRight)`
 `
 
 export const AvailabilityWrap = styled.div`
-  /* border: 3px solid black; */
   box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
   border-radius: 8px;
   margin: 0 auto;
   margin-bottom: 2rem;
   width: 95%;
-  /* max-width: 20rem; */
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid black;
+  }
 `
 
 export const AvailabilityForm = styled.div`
@@ -39,9 +43,10 @@ export const AvailabilityForm = styled.div`
 export const Options = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: 1rem auto;
   margin-top: 2rem;
   width: 100%;
+  max-width: 100rem;
 
   @media(min-width: 768px) {
     flex-direction: row;

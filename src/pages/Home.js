@@ -9,13 +9,13 @@ import { AboutTitle } from '../styles/About.style'
 function Home() {
   return (
     <>
-      <Header height="90vh" />
+      <Header height="90vh" tabletHeight="10vh" />
       <AboutTitle>
         <h1>ABOUT <span>US</span></h1>
         <p>We're passionate about Ilfracombe and the surrounding area. We love promoting the many thing happening in North Devon. Take a look at the activites page to find out more.</p>
       </AboutTitle>
       <Availability color="rgb(19, 27, 35)" backgroundHoverColor="rgb(44, 50, 56)" iconColor="black" />
-      <Carousel title="Apartments" margin="0" />
+      <Carousel title="Apartments" margin="0" subTitle="View Our Gallery!" />
       <About/>
       <Testimonials />
       <Hygiene />

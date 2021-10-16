@@ -26,11 +26,12 @@ export const ApartmentTitle = styled.div`
 export const ApartmentText = styled.p`
   /* box-shadow: 1px 1px 10px rgba(50,50,50,0.2); */
   border-radius: 10px;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 0.5rem;
   overflow: hidden;
   height: ${props => props.height};
   font-size: 12px;
+  max-width: 40rem;
 
   div {
     background-color: rgb(235,235,235);
@@ -84,6 +85,7 @@ export const ApartmentInfo = styled.div`
   justify-content: space-between;
   font-size: 12px;
   font-weight: 600;
-  margin: 0 1.5rem;
+  margin: 0 auto;
   margin-bottom: -1rem;
+  max-width: 40rem;
 `

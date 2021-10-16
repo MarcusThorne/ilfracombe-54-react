@@ -11,14 +11,28 @@ export const AboutWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 1rem; */
+  min-height: 35rem;
+
+  @media(min-width: 768px) {
+    background-size: cover;
+    background-position: top;
+  }
+`
+
+export const AboutText = styled.h1`
+  background-color: rgba(255,255,255,0.8);
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  margin-bottom: -1rem;
+  text-align: center;
 `
 
 export const AboutTitle = styled.div`
   background-color: rgb(19, 27, 35);
   color: white;
   padding: 2rem;
-  /* margin: 1rem; */
   margin-bottom: 1rem;
 
   h1 {
@@ -38,7 +52,6 @@ export const AboutTitle = styled.div`
 `
 
 export const AboutCards = styled.div`
-  /* margin: 1rem; */
   max-width: 30rem;
   width: 90%;
   border-radius: 10px;
@@ -46,21 +59,21 @@ export const AboutCards = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(255,255,255,0.8); */
   margin: 2rem;
   margin-bottom: 60%;
-  /* box-shadow: 1px 1px 10px rgba(0,0,0,0.2); */
   padding: 2rem 0;
 
   @media(min-width: 768px) {
     flex-direction: row;
     max-width: 40rem;
     align-items: stretch;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 4px;
+    margin-bottom: 0;
+    padding: 1rem 2rem
   }
 
   div {
-    /* padding-top: 1rem; */
-    /* margin: 0 2rem; */
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -75,6 +88,11 @@ export const AboutCards = styled.div`
       border-bottom: 1px solid rgba(0,0,0,0.1);
       width: 80%;
       margin: 1.5rem auto;
+
+      @media(min-width: 768px) {
+        border: none;
+        margin: auto;
+      }
     }
 
     svg {

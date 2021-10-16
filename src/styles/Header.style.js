@@ -10,6 +10,17 @@ export const HeaderWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 34rem;
+
+  @media(min-width: 425px) {
+    height: ${props => props.tabletHeight};
+    min-height: 0;
+  }
+
+  @media(min-width: 1024px) {
+    background-size: cover;
+    background-position: top;
+  }
 `
 
 export const Or = styled.div`
@@ -29,10 +40,17 @@ export const Or = styled.div`
 
 export const HeaderContent = styled.div`
   width: max-content;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   display: ${props => props.display};
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  @media(min-width: 768px) {
+    background-color: rgba(255,255,255,0.8);
+    padding: 2rem 4rem;
+    border-radius: 4px;
+  }
 
   h1 {
     font-size: 32px;
@@ -45,7 +63,7 @@ export const HeaderContent = styled.div`
     }
 
     @media(min-width: 768px) {
-      font-size: 60px;
+      font-size: 45px;
     }
   }
 
@@ -58,7 +76,7 @@ export const HeaderContent = styled.div`
     }
 
     @media(min-width: 768px) {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 
@@ -68,7 +86,7 @@ export const HeaderContent = styled.div`
     margin-top: -10px;
 
     @media(min-width: 768px) {
-      font-size: 30px;
+      font-size: 22px;
     }
   }
 `
