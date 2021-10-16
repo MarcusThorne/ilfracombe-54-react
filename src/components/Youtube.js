@@ -15,6 +15,7 @@ class YoutubeVideo extends React.Component {
         iv_load_policy: 3,
         disablekb: 1,
         controls: 0,
+        playerVars: { vq: '1080p' }
       },
     };
 

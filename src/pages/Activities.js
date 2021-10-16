@@ -19,9 +19,14 @@ function Activities() {
         <p>Ilfracombe is packed with wonderful scenic trails, beaches and sea life. It has a lot to offer, take a walk along to seaside cliffs or a boat trip around the coast. There is also a lot to do in surrounding areas... croyde and woolacombe have great beaches and many pubs with great food. And for a great fish and chips visit Braunton.</p>
         <Button margin="1rem 0">See What's On</Button>
       </AboutTitle>
+      <h2 style={{textAlign:"center"}}>Take A Look</h2>
       <ActivitiesWrap>
         {Adverts.map(ad => {
-          return(<Activity name={ad.name} image={ad.image} ></Activity>)
+          return(
+            <>
+              <Activity name={ad.name} image={ad.image} ></Activity>
+            </>
+          )
         })}
       </ActivitiesWrap>
     </>

@@ -31,7 +31,7 @@ export const ApartmentText = styled.p`
   overflow: hidden;
   height: ${props => props.height};
   font-size: 12px;
-  max-width: 40rem;
+  /* max-width: 40rem; */
 
   div {
     background-color: rgb(235,235,235);
@@ -87,5 +87,5 @@ export const ApartmentInfo = styled.div`
   font-weight: 600;
   margin: 0 auto;
   margin-bottom: -1rem;
-  max-width: 40rem;
+  /* max-width: 40rem; */
 `

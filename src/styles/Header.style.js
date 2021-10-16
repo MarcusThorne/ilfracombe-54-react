@@ -1,16 +1,29 @@
 import styled from 'styled-components'
 
+export const BackgroundImage = styled.img`
+  position: absolute;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+
+  @media(min-width: 426px) {
+    transform: translateY(${ props => props.transform }px);
+    top: ${props => props.top};
+    bottom: ${props => props.bottom};
+  }
+`
+
 export const HeaderWrap = styled.div`
-  background-image: url(${props => props.image});
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 100%;
   height: ${props => props.height};
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 34rem;
+  position: relative;
+  overflow: hidden;
 
   @media(min-width: 425px) {
     height: ${props => props.tabletHeight};

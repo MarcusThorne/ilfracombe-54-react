@@ -1,10 +1,21 @@
-import { HeaderWrap, HeaderContent, HeaderLinks, Or } from '../styles/Header.style'
+import { HeaderWrap, HeaderContent, HeaderLinks, Or, BackgroundImage } from '../styles/Header.style'
 import { Button } from '../styles/Button.style'
 import img from '../img/harbour.png'
+import { useState, useEffect } from 'react'
 
 function Header({height}) {
+  const [offsetY, setOffsetY] = useState(0)
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
+    return() => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <HeaderWrap image={img} height={height} >
+    <HeaderWrap style={{ backgroundAttachment: `fixed` }}height={height} >
+      <BackgroundImage src={img} alt="ilfracombe" bottom="0" transform={offsetY * 0.3 } />
       <HeaderContent >
         <h1>Ilfracombe <span>No. 54</span></h1>
         <p>Three Holiday Apartments</p>

@@ -6,6 +6,10 @@ export const Video = styled.div`
   background-color: black;
   position: relative;
 
+  @media(min-width: 768px) {
+    height: 28rem;
+  }
+
   iframe {
     height: 40rem;
     width: 38rem;
@@ -14,6 +18,14 @@ export const Video = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
+
+    @media(min-width: 620px) {
+      width: 105%;
+    }
+
+    @media(min-width: 1100px) {
+      height: 50rem;
+    }
   }
 
   h1 {

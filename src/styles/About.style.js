@@ -1,22 +1,15 @@
 import styled from 'styled-components'
-import img from '../img/ilfracombe.png'
 
 export const AboutWrap = styled.div`
-  background-image: url(${img});
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 35rem;
-
-  @media(min-width: 768px) {
-    background-size: cover;
-    background-position: top;
-  }
+  overflow: hidden;
+  max-height: 50rem;
+  position: relative;
 `
 
 export const AboutText = styled.h1`
@@ -25,8 +18,8 @@ export const AboutText = styled.h1`
   max-width: 30rem;
   padding: 1rem 2rem;
   border-radius: 4px;
-  margin-bottom: -1rem;
   text-align: center;
+  margin-top: 4rem;
 `
 
 export const AboutTitle = styled.div`
@@ -59,9 +52,9 @@ export const AboutCards = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
   margin-bottom: 60%;
   padding: 2rem 0;
+  margin-top: -2rem;
 
   @media(min-width: 768px) {
     flex-direction: row;

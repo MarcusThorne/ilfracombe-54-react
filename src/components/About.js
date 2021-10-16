@@ -1,11 +1,21 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { FaMedal } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdVerified, MdOutlineCleaningServices } from 'react-icons/md'
 import img from '../img/ilfracombe.png'
 import { AboutWrap, AboutCards, AboutText } from '../styles/About.style'
+import { BackgroundImage } from '../styles/Header.style'
 
 function About() {
+  const [offsetY, setOffsetY] = useState(0)
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   const cards = [
     {
       id: 1,
@@ -35,7 +45,8 @@ function About() {
   }
 
   return (
-    <AboutWrap image={img} height="100%" >
+    <AboutWrap height="100%" >
+      <BackgroundImage src={img} alt="Ilfracombe" top="5rem" transform={ offsetY * 0.2} />
       <AboutText>Accomplishment</AboutText>
       <AboutCards>
         {cards.map(card =>

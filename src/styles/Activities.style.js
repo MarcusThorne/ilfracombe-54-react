@@ -65,6 +65,12 @@ export const ActivitiesWrap = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
   }
+
+  @media(min-width: 1440px ) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+  }
 `
 
 Next.defaultProps = {

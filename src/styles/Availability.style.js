@@ -13,6 +13,7 @@ export const AvailabilityWrap = styled.div`
   margin: 0 auto;
   margin-bottom: 2rem;
   width: 95%;
+  margin-top: 2rem;
 
   @media(min-width: 768px) {
     flex-direction: row;

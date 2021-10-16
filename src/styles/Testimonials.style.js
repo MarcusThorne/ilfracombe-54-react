@@ -19,7 +19,7 @@ export const TestWrap = styled.div`
     font-size: 16px;
 
     @media(min-width: 768px) {
-      max-width: 30rem;
+      max-width: 50rem;
     }
   }
 
