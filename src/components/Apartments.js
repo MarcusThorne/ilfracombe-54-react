@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
-import { ApartmentText, ApartmentTitle, ApartmentInfo, HiddenInfo, Cross, CarouselTitle } from '../styles/Apartments.style'
+import { ApartmentText, ApartmentTitle, ApartmentWrap, ApartmentsWrap, ApartmentInfo, HiddenInfo, Cross, CarouselTitle } from '../styles/Apartments.style'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { Button } from '../styles/Button.style'
 import { useState } from 'react'
@@ -56,11 +56,11 @@ function Apartments() {
   }
 
   return (
-    <>
+    <ApartmentsWrap>
       {apartmentData.map(apartment =>
-        <>
+        <ApartmentWrap>
           <CarouselTitle>
-            <Carousel width="auto" margin="1rem" title={apartment.title} floor={apartment.id} ></Carousel>
+            <Carousel width="auto" margin="1rem" title={apartment.title} floor={apartment.id} respond={false} slides={1} ></Carousel>
             <ApartmentTitle>
               <p>{apartment.floor}</p>
               <AiOutlineInfoCircle onClick={() => toggleInfo(apartment.id)} />
@@ -86,9 +86,9 @@ function Apartments() {
               <p>{apartment.guestAccess}</p>
             </div>
           </HiddenInfo>
-        </>
+        </ApartmentWrap>
       )}
-    </>
+    </ApartmentsWrap>
   )
 }
 

@@ -1,24 +1,13 @@
 import React from 'react'
 import Slider from "react-slick";
-import ApartmentOneImages from './ApartmentOneImages'
-import ApartmentTwoImages from './ApartmentTwoImages'
-import ApartmentThreeImages from './ApartmentThreeImages'
+import ApartmentOneImages from '../img/components/ApartmentOneImages'
+import ApartmentTwoImages from '../img/components/ApartmentTwoImages'
+import ApartmentThreeImages from '../img/components/ApartmentThreeImages'
 import { Image, Title, Icon, CarouselWrap } from '../styles/Carousel.style'
 
-function Carousel({title, floor, width, margin, subTitle}) {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '30px',
-    autoplay: true,
-    focusOnSelected: true,
-    swipe: true,
-    swipeToSlide: true,
-    responsive: [
+function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4}) {
+  const responsive = () => {
+    var settings = [
       {
         breakpoint: 1024,
         settings: {
@@ -35,13 +24,30 @@ function Carousel({title, floor, width, margin, subTitle}) {
         }
       },
       {
-        breakpoint: 425,
+        breakpoint: 426,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
+
+    return (respond ? settings : false)
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: slides,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '30px',
+    autoplay: true,
+    focusOnSelected: true,
+    swipe: true,
+    swipeToSlide: true,
+    responsive: responsive()
   };
 
   const findImages = () => {

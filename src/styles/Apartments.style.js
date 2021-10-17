@@ -5,6 +5,20 @@ export const CarouselTitle = styled.div`
   position: relative;
 `
 
+export const ApartmentWrap = styled.div`
+  margin: 0 auto;
+
+  @media(min-width: 1440px) {
+    width: 25rem;
+  }
+`
+
+export const ApartmentsWrap = styled.div`
+  @media(min-width: 1440px) {
+    display: flex;
+  }
+`
+
 export const ApartmentTitle = styled.div`
   background-color: rgba(19, 27, 35, 0.9);
   color: white;
@@ -24,14 +38,12 @@ export const ApartmentTitle = styled.div`
 `
 
 export const ApartmentText = styled.p`
-  /* box-shadow: 1px 1px 10px rgba(50,50,50,0.2); */
   border-radius: 10px;
   margin: 1rem auto;
   padding: 0.5rem;
   overflow: hidden;
   height: ${props => props.height};
   font-size: 12px;
-  /* max-width: 40rem; */
 
   div {
     background-color: rgb(235,235,235);
@@ -87,5 +99,4 @@ export const ApartmentInfo = styled.div`
   font-weight: 600;
   margin: 0 auto;
   margin-bottom: -1rem;
-  /* max-width: 40rem; */
 `
