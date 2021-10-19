@@ -13,7 +13,6 @@ export const BackgroundImage = styled.img`
   }
 
   @media(min-width: 1024px ) {
-    bottom: ${props => props.laptopBottom};
     top: ${props => props.laptopTop};
   }
 `
@@ -27,17 +26,14 @@ export const ParallaxWrap = styled.div`
   min-height: 34rem;
   position: relative;
   overflow: hidden;
-  margin-top: 2rem;
-  padding: 5rem 0;
 
   @media(min-width: 425px) {
     height: ${props => props.tabletHeight};
-    min-height: 0;
+    min-height: 30rem;
   }
 
   @media(min-width: 1024px) {
-    background-size: cover;
-    background-position: top;
+    min-height: 40rem;
   }
 `
 
@@ -86,19 +82,6 @@ export const ParallaxContent = styled.div`
     }
   }
 
-  span {
-    color: #d6a449;
-    font-size: 25px;
-
-    @media(min-width: 425px) {
-      font-size: 30px;
-    }
-
-    @media(min-width: 768px) {
-      font-size: 40px;
-    }
-  }
-
   p {
     font-size: 18px;
     margin: 0;
@@ -130,14 +113,15 @@ export const ParallaxCards = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  margin: 0 auto;
+  margin: 10rem auto;
   margin-bottom: 55%;
 
   @media(min-width: 768px) {
     flex-direction: row;
     max-width: 40rem;
-    align-items: stretch;
+    align-items: center;
     border-radius: 4px;
+    margin: auto;
     margin-bottom: 0;
     padding: 1rem 2rem
   }

@@ -7,6 +7,11 @@ export const CarouselTitle = styled.div`
 
 export const ApartmentWrap = styled.div`
   margin: 0 auto;
+  max-width: 25rem;
+
+  @media(min-width: 768px) {
+    width: auto;
+  }
 
   @media(min-width: 1440px) {
     width: 25rem;
@@ -14,6 +19,11 @@ export const ApartmentWrap = styled.div`
 `
 
 export const ApartmentsWrap = styled.div`
+  @media(min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media(min-width: 1440px) {
     display: flex;
   }

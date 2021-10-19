@@ -5,6 +5,7 @@ export const Video = styled.div`
   height: 20.8rem;
   background-color: black;
   position: relative;
+  margin-top: 5rem;
 
   @media(min-width: 768px) {
     height: 28rem;
