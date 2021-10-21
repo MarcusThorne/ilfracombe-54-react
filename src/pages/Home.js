@@ -4,7 +4,6 @@ import Testimonials from '../components/Testimonials'
 import Info from '../components/Info'
 import Header from '../img/ilfracombeBuildings.png'
 import About from '../img/ilfracombe.png'
-import { NavLink } from '../styles/Navbar.style'
 
 function Home() {
     return (
@@ -16,7 +15,7 @@ function Home() {
         <Carousel title="Apartments" margin="0" subTitle="View Our Gallery!" marginTop="10rem" />
         <Parallax height="100%" img={About} about={true} title="Accomplishments" bottom="10rem" laptopTop="-20%" speed={0.1} />
         <Testimonials />
-            <Info image={true} display="grid" infoTitle={<><span>S</span>taying Safe</>} itemTitle="30px" responsiveItemTitle="32px" />
+            <Info largeTitle={true} image={true} display="grid" infoTitle={<><span>S</span>taying Safe</>} itemTitle="30px" responsiveItemTitle="32px" />
         </>
     )
 }

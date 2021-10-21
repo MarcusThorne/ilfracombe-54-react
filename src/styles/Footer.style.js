@@ -58,7 +58,13 @@ export const LinkSection = styled.div`
         margin: 1rem 2rem;
 
         &:first-child {
-            margin: 1rem 3rem;
+            margin-right: 3rem;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        &:first-child {
+            margin-right: 10rem;
         }
     }
 `

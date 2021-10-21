@@ -23,6 +23,7 @@ export const ActivityWrap = styled.div`
   background-size: cover;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-shadow: 1px 1px 10px rgba(0,0,0,1);
@@ -34,7 +35,7 @@ export const ActivityWrap = styled.div`
   font-size: 30px;
 
   @media(min-width: 768px ) {
-    margin: 1rem auto;
+    margin: 1rem;
   }
 
   button {
@@ -57,20 +58,23 @@ export const ActivitiesWrap = styled.div`
   @media(min-width: 768px ) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
   }
 
   @media(min-width: 1024px ) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
   }
 
   @media(min-width: 1440px ) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
   }
+`
+
+export const ActivityLocation = styled.p`
+    font-size: 14px;
+    margin-top: -2rem;
 `
 
 Next.defaultProps = {

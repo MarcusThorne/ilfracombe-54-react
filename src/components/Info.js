@@ -5,7 +5,7 @@ import limitImg from '../img/limit.jpg'
 import { Button } from "../styles/Button.style"
 import Availability from "./Availability"
 
-function Info({infoTitle, title, subTitle, image, button, availability, color, backgroundColor, iconColor, display, flexDirection, itemTitle, responsiveItemTitle}) {
+function Info({infoTitle, title, subTitle, image, button, availability, color, backgroundColor, iconColor, display, flexDirection, itemTitle, responsiveItemTitle, largeTitle=false}) {
     const Hygiene = [
     {
       title: "Precautions",
@@ -24,16 +24,20 @@ function Info({infoTitle, title, subTitle, image, button, availability, color, b
 
     return (
         <>
-            <InfoTitle display={availability ? "none" : "flex"}>{infoTitle}</InfoTitle>
+            <InfoTitle display={largeTitle ? "flex" : "none"}>{infoTitle}</InfoTitle>
             <InfoWrap display={display} flexDirection={flexDirection} >
                 {image ?
-                    Hygiene.map(h =>
-                        <GridItem itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
-                            <img src={h.img} alt={h.title} />
-                            <h1>{h.title}</h1>
-                            <p>{h.description}</p>
-                        </GridItem>
-                    ) :
+                    <>
+
+                        {Hygiene.map(h =>
+                            <GridItem itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
+                                <img src={h.img} alt={h.title} />
+                                <h1>{h.title}</h1>
+                                <p>{h.description}</p>
+                            </GridItem>
+                        )}
+                    </>
+                     :
                     <GridItem itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
                         <h1>{title}</h1>
                         <p>{subTitle}</p>
