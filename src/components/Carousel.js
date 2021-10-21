@@ -5,7 +5,7 @@ import ApartmentTwoImages from '../img/components/ApartmentTwoImages'
 import ApartmentThreeImages from '../img/components/ApartmentThreeImages'
 import { Image, Title, Icon, CarouselWrap } from '../styles/Carousel.style'
 
-function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4, fontSize}) {
+function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4, fontSize, marginTop}) {
   const responsive = () => {
     var settings = [
       {
@@ -67,7 +67,7 @@ function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4
     }
 
     return (
-        <CarouselWrap width={width} margin={margin} >
+        <CarouselWrap width={width} margin={margin} marginTop={marginTop} >
             <Title fontSize={fontSize}>
                 <div style={{display: "flex", flexDirection: "column"}}>
                     <h1>{title}</h1>

@@ -9,7 +9,6 @@ export const ApartmentWrap = styled.div`
   margin: 0 auto;
   max-width: 25rem;
   overflow: hidden;
-  height: 53rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,6 +23,8 @@ export const ApartmentWrap = styled.div`
 `
 
 export const ApartmentsWrap = styled.div`
+margin-top: 10rem;
+
   @media(min-width: 980px) {
     display: grid;
     grid-template-columns: 1fr 1fr;

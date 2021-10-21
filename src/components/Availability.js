@@ -68,7 +68,6 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
         <Button id="availabilitySubmit" padding="1rem 4rem" fontSize="18px" style={{borderRadius: "4px", maxWidth: "30rem", margin: "0 auto"}}>Search</Button>
       </AvailabilityForm>
-      {/* <Button style={{borderRadius: "10px", display:"flex", justifyContent:"center", alignItems: "center"}} color={color} backgroundHoverColor={backgroundHoverColor} onClick={() => setShow(show = !show)}>{ show ? "Hide" : "Show" }<AiOutlineDown style={{fontSize: "20px", marginLeft: "1rem"}} /></Button> */}
     </AvailabilityWrap>
   )
 }

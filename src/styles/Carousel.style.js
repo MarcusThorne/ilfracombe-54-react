@@ -49,6 +49,7 @@ export const CarouselWrap = styled.div`
     width: ${props => props.width};
     margin: ${props => props.margin};
     overflow: hidden;
+    margin-top: ${props => props.marginTop};
 `
 
 Icon.defaultProps = {
