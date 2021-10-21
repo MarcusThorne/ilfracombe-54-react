@@ -31,5 +31,6 @@ Button.defaultProps = {
   fontSize: "14px",
   padding: "1rem 2rem",
   margin: "0",
-  responsiveFontSize: "18px"
+  responsiveFontSize: "18px",
+  width: "100%"
 }
