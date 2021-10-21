@@ -10,6 +10,9 @@ export const NavbarWrap = styled.nav`
   top: 0;
   z-index: 100;
   width: 100%;
+  max-width: 1500px;
+  transform: translate(-50%, 0%);
+  left: 50%;
 
   @media(min-width: 1024px) {
     justify-content: space-around;
@@ -44,6 +47,10 @@ export const NavLink = styled(Link)`
     display: flex;
     margin: 0 1rem;
   }
+
+    @media(min-width: 1024px) {
+        margin: 0 2rem;
+    }
 `
 
 export const Icon = styled(FaBars)`

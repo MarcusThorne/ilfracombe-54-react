@@ -1,4 +1,4 @@
-import { InfoWrap } from "../styles/Info.style"
+import { InfoWrap, GridItem } from "../styles/Info.style"
 import hygieneImg from '../img/hygiene.jpg'
 import cautionImg from '../img/caution.jpg'
 import limitImg from '../img/limit.jpg'
@@ -22,22 +22,22 @@ function Info({title, subTitle, image, button}) {
   ]
 
   return (
-    <InfoWrap>
+      <InfoWrap display="grid">
       {image ?
         Hygiene.map(h =>
-          <div>
+          <GridItem >
             <img src={h.img} alt={h.title} />
             <h1>{h.title}</h1>
             <p>{h.description}</p>
-          </div>
+          </GridItem>
         ) :
-        <div>
+        <GridItem>
           <h1>{title}</h1>
           <p>{subTitle}</p>
           {button &&
             <Button margin="1rem 0">{button}</Button>
           }
-        </div>
+        </GridItem>
       }
     </InfoWrap>
   )

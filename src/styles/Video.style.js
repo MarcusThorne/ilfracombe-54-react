@@ -27,6 +27,10 @@ export const Video = styled.div`
     @media(min-width: 1100px) {
       height: 50rem;
     }
+
+    @media(min-width: 1440px) {
+        height: 80rem;
+    }
   }
 
   h1 {

@@ -8,6 +8,7 @@ import {Application} from './styles/App.style'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {useState} from 'react'
 import Footer from './components/Footer'
+import './app.css'
 
 function App() {
   const [sidebar, setSidebar] = useState(false)

@@ -5,7 +5,7 @@ import { FaMedal } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdVerified, MdOutlineCleaningServices } from 'react-icons/md'
 
-function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopBottom, speed=0.3}) {
+function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopBottom, speed=0.3, bottom, responsiveWidth, desktopTop}) {
   const [offsetY, setOffsetY] = useState(0)
   const handleScroll = () => setOffsetY(window.pageYOffset)
 
@@ -45,7 +45,7 @@ function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopB
 
   return (
     <ParallaxWrap style={{ backgroundAttachment: `fixed` }}height={height} >
-      <BackgroundImage src={img} alt="ilfracombe" bottom="0rem" laptopBottom={laptopBottom} laptopTop={laptopTop} transform={offsetY * speed } />
+      <BackgroundImage src={img} alt="ilfracombe" bottom={bottom} laptopBottom={laptopBottom} desktopTop={desktopTop} laptopTop={laptopTop} transform={offsetY * speed } responsiveWidth={responsiveWidth} />
       <ParallaxContent >
         <h1>{title}</h1>
         <p>{subTitle}</p>

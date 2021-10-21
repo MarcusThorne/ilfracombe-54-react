@@ -8,6 +8,11 @@ export const CarouselTitle = styled.div`
 export const ApartmentWrap = styled.div`
   margin: 0 auto;
   max-width: 25rem;
+  overflow: hidden;
+  height: 53rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media(min-width: 768px) {
     width: auto;
@@ -19,7 +24,7 @@ export const ApartmentWrap = styled.div`
 `
 
 export const ApartmentsWrap = styled.div`
-  @media(min-width: 768px) {
+  @media(min-width: 980px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -105,6 +110,7 @@ export const Cross = styled(ImCross)`
 export const ApartmentInfo = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 90%;
   font-size: 12px;
   font-weight: 600;
   margin: 0 auto;

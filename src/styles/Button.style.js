@@ -18,7 +18,7 @@ export const Button = styled.button`
   }
 
   @media(min-width: 768px) {
-    font-size: 18px;
+    font-size: ${props => props.responsiveFontSize}
   }
 `
 
@@ -30,5 +30,6 @@ Button.defaultProps = {
   textHoverColor: "white",
   fontSize: "14px",
   padding: "1rem 2rem",
-  margin: "0"
+  margin: "0",
+  responsiveFontSize: "18px"
 }

@@ -55,41 +55,41 @@ function Apartments() {
     ]);
   }
 
-  return (
-    <ApartmentsWrap>
-      {apartmentData.map(apartment =>
-        <ApartmentWrap>
-          <CarouselTitle>
-            <Carousel width="auto" margin="1rem" title={apartment.title} floor={apartment.id} respond={false} slides={1} ></Carousel>
-            <ApartmentTitle>
-              <p>{apartment.floor}</p>
-              <AiOutlineInfoCircle onClick={() => toggleInfo(apartment.id)} />
-            </ApartmentTitle>
-          </CarouselTitle>
-          <ApartmentInfo>
-            <p>Sleeps {apartment.guests}</p>
-            <p>Dogs {apartment.dogs}</p>
-            <p>{apartment.bedrooms} {apartment.bedrooms === 1 ? "Bedroom" : "Bedrooms"} </p>
-          </ApartmentInfo>
-          <ApartmentText >
-            <p>{apartment.description}</p>
-            <div>From <span>£100 - £120</span> per night</div>
-            <Button style={{marginTop: "2rem"}} >Book Now</Button>
-          </ApartmentText>
-          <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem"}}></div>
-          <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
-            <div>
-              <Cross />
-              <h4>Space</h4>
-              <p>{apartment.space}</p>
-              <h4>Guest Access</h4>
-              <p>{apartment.guestAccess}</p>
-            </div>
-          </HiddenInfo>
-        </ApartmentWrap>
-      )}
-    </ApartmentsWrap>
-  )
+    return (
+        <ApartmentsWrap>
+            {apartmentData.map(apartment =>
+                <ApartmentWrap>
+                    <CarouselTitle>
+                        <Carousel width="auto" margin="1rem" title={apartment.title} floor={apartment.id} respond={false} slides={1} fontSize="30px" ></Carousel>
+                        <ApartmentTitle>
+                            <p>{apartment.floor}</p>
+                            <AiOutlineInfoCircle onClick={() => toggleInfo(apartment.id)} />
+                        </ApartmentTitle>
+                    </CarouselTitle>
+                    <ApartmentInfo>
+                        <p>Sleeps {apartment.guests}</p>
+                        <p>Dogs {apartment.dogs}</p>
+                        <p>{apartment.bedrooms} {apartment.bedrooms === 1 ? "Bedroom" : "Bedrooms"} </p>
+                    </ApartmentInfo>
+                    <ApartmentText >
+                        <p>{apartment.description}</p>
+                        <div>From <span>£100 - £120</span> per night</div>
+                        <Button style={{marginTop: "2rem"}} >Book Now</Button>
+                    </ApartmentText>
+                    <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem"}}></div>
+                    <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
+                        <div>
+                            <Cross />
+                            <h4>Space</h4>
+                            <p>{apartment.space}</p>
+                            <h4>Guest Access</h4>
+                            <p>{apartment.guestAccess}</p>
+                        </div>
+                    </HiddenInfo>
+                </ApartmentWrap>
+            )}
+        </ApartmentsWrap>
+    )
 }
 
 export default Apartments
