@@ -12,10 +12,12 @@ export const Button = styled.button`
   box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
   margin: ${props => props.margin};
   border-radius: ${props => props.borderRadius};
+  transition: 0.5s;
 
   &:hover {
     background-color: ${(props) => props.backgroundHoverColor};
     color: ${(props) => props.textHoverColor};
+    transform: scale(1.02);
   }
 
   @media(min-width: 768px) {

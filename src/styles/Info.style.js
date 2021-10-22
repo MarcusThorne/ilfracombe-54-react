@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const InfoWrap = styled.div`
-    background-color: #131B23;
+    background-color: ${props => props.wrapBackgroundColor};
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 5rem 1rem 3rem 1rem;
+    border: #131B23;
 
     @media(min-width: 768px){
         display: ${props => props.display};
@@ -23,6 +23,11 @@ export const InfoWrap = styled.div`
 
 export const GridItem = styled.div`
     margin: 4rem 0;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.04);
+    }
 
     a {
         color: #D6A449;
@@ -32,6 +37,7 @@ export const GridItem = styled.div`
         font-size: ${props => props.itemTitle};
         margin-bottom: -0.5rem;
         font-weight: 500;
+        margin-top: 0;
 
         span {
             color: #D6A449;
@@ -46,6 +52,7 @@ export const GridItem = styled.div`
         font-size: 14px;
         max-width: 30rem;
         margin: 1rem auto;
+        padding: 0 2rem;
     }
 
     img {
@@ -74,7 +81,7 @@ export const InfoTitle = styled.h1`
     background-color: #131B23;
     margin: 0;
     color: white;
-    padding-top: 2rem;
+    padding-top: 5rem;
     font-weight: 500;
     font-size: 38px;
     display: ${props => props.display};
@@ -87,7 +94,8 @@ export const InfoTitle = styled.h1`
 
 InfoWrap.defaultProps = {
     display: "flex",
-    flexDirection: "row"
+    flexDirection: "row",
+    wrapBackgroundColor: "#131B23"
 }
 
 InfoTitle.defaultProps = {

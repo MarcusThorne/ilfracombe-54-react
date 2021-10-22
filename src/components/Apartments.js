@@ -60,7 +60,7 @@ function Apartments() {
             {apartmentData.map(apartment =>
                 <ApartmentWrap>
                     <CarouselTitle>
-                        <Carousel width="auto" margin="1rem" title={apartment.title} floor={apartment.id} respond={false} slides={1} fontSize="30px" ></Carousel>
+                        <Carousel arrows={true} width="auto" margin="1rem" autoplay={false} apartmentsPage={true} floor={apartment.id} respond={false} slides={1} fontSize="30px" ></Carousel>
                         <ApartmentTitle>
                             <p>{apartment.floor}</p>
                             <AiOutlineInfoCircle onClick={() => toggleInfo(apartment.id)} />
@@ -76,7 +76,7 @@ function Apartments() {
                         <div>From <span>£100 - £120</span> per night</div>
                         <Button style={{marginTop: "2rem"}} >Book Now</Button>
                     </ApartmentText>
-                    <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem"}}></div>
+                    {/* <div style={{borderBottom: "1px solid rgba(0,0,0,0.1)", margin: "2rem"}}></div> */}
                     <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
                         <div>
                             <Cross />

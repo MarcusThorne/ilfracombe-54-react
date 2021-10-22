@@ -3,8 +3,16 @@ import { BsArrowRight } from 'react-icons/bs'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 
 export const Next = styled(BsArrowRight)`
-  color: white;
-  font-size: 25px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 `
 
 export const Info = styled(AiOutlineInfoCircle)`
@@ -33,20 +41,14 @@ export const ActivityWrap = styled.div`
   position: relative;
   border-radius: 10px;
   font-size: 30px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 
   @media(min-width: 768px ) {
     margin: 1rem;
-  }
-
-  button {
-    position: absolute;
-    right: 0;
-    bottom: 1rem;
-    padding: 0.5rem 1.5rem;
-    background-color: rgba(0,0,0,0.7);
-    border: none;
-    font-size: 18px;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
   }
 `
 
@@ -75,6 +77,10 @@ export const ActivitiesWrap = styled.div`
 export const ActivityLocation = styled.p`
     font-size: 14px;
     margin-top: -2rem;
+`
+
+export const Link = styled.a`
+    text-decoration: none;
 `
 
 Next.defaultProps = {

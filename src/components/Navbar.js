@@ -13,7 +13,7 @@ function Navbar(props) {
         <NavLink to="/activities">Activities</NavLink>
         <NavLink to="/contact">Contact</NavLink>
         <div>
-          <NavLink border="none" to="/airbnb"><Button responsiveFontSize="16px">AirBnb</Button></NavLink>
+          <NavLink border="none" to="/airbnb"><Button responsiveFontSize="14px">AirBnb</Button></NavLink>
           <Icon onClick={props.toggleSidebar} />
         </div>
       </Links>

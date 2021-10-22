@@ -15,33 +15,33 @@ import Exmoor from '../img/activities/exmoor.jpg'
 import Water from '../img/activities/water.jpg'
 
 const Adverts = [
-  {
-    name: "Tiki Surf Shop",
-    location: "Barnstaple",
-    category: "Shop",
-    description: "The Tiki surf shop is one of the UK’s oldest surfboard and wetsuit retailers. Originally developed as a surf outlet for Tiki surfboards and the licensed classic Californian surfboards of Bing and G&S, it is now one of the largest surf shops in the UK.",
-    phone: "07963 531964",
-    address: "Caen St, Braunton, EX33 1AA",
-    link: "https://www.tikisurf.co.uk/",
-    image: Tiki
-  }, {
-    name: "Museum of British Surfing",
-    location: "Barnstaple",
-    category: "Museum",
-    description: "The Museum of British Surfing is a national registered charity preserving our surfing heritage and culture, celebrating current achievements and helping to shape the future of surfing in Great Britain.",
-    phone: "01271 815155",
-    address: "The Museum of British Surfing The Yard, Caen St, Braunton, EX33 1AA",
-    link: "https://www.museumofbritishsurfing.org.uk/",
-    image: Museum
-  }, {
-    name: "Embassy Cinema",
-    location: "Ilfracombe",
-    category: "Entertainment",
-    description: "Independent cinema showing latest releases and alternative films, with waiter service in one screen.",
-    phone: "01271 862323",
-    address: "134 High St, Ilfracombe, EX34 9EZ",
-    link: "https://ilfracombe.merlincinemas.co.uk/?forcechoice=true",
-    image: Embassy
+    {
+        name: "Tiki Surf Shop",
+        location: "Barnstaple",
+        category: "Shop",
+        description: "The Tiki surf shop is one of the UK’s oldest surfboard and wetsuit retailers. Originally developed as a surf outlet for Tiki surfboards and the licensed classic Californian surfboards of Bing and G&S, it is now one of the largest surf shops in the UK.",
+        phone: "07963 531964",
+        address: "Caen St, Braunton, EX33 1AA",
+        link: "https://www.tikisurf.co.uk/",
+        image: Tiki
+    }, {
+        name: "Museum of British Surfing",
+        location: "Barnstaple",
+        category: "Museum",
+        description: "The Museum of British Surfing is a national registered charity preserving our surfing heritage and culture, celebrating current achievements and helping to shape the future of surfing in Great Britain.",
+        phone: "01271 815155",
+        address: "The Museum of British Surfing The Yard, Caen St, Braunton, EX33 1AA",
+        link: "https://www.museumofbritishsurfing.org.uk/",
+        image: Museum
+    }, {
+        name: "Embassy Cinema",
+        location: "Ilfracombe",
+        category: "Entertainment",
+        description: "Independent cinema showing latest releases and alternative films, with waiter service in one screen.",
+        phone: "01271 862323",
+        address: "134 High St, Ilfracombe, EX34 9EZ",
+        link: "https://ilfracombe.merlincinemas.co.uk/?forcechoice=true",
+        image: Embassy
     }, {
         name: "The Landmark Theatre",
         location: "Ilfracombe",
@@ -179,7 +179,7 @@ const Adverts = [
         link: "https://www.watermouthcastle.com/",
         image: Water
     }, {
-        name: "Weatherspoons",
+        name: "The Admiral Collingwood",
         location: "Ilfracombe",
         category: "Resturant/ Pub",
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
@@ -188,7 +188,7 @@ const Adverts = [
         link: "https://www.watermouthcastle.com/",
         image: Water
     }, {
-        name: "Weatherspoons",
+        name: "The Water Gate",
         location: "Barnstaple",
         category: "Resturant/ Pub",
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",

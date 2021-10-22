@@ -1,11 +1,11 @@
-import { Icon } from '../styles/Logo.style'
+import { Icon, LogoTitle, LogoImg } from '../styles/Logo.style'
 import logo from '../img/logo.png'
 
 function Logo() {
   return (
     <Icon>
-      <img src={logo} alt="Logo" />
-      <h1><span>.</span>54</h1>
+      <LogoImg src={logo} alt="Logo" />
+      <LogoTitle><span>.</span>54</LogoTitle>
     </Icon>
   )
 }

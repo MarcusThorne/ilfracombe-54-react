@@ -5,7 +5,7 @@ import limitImg from '../img/limit.jpg'
 import { Button } from "../styles/Button.style"
 import Availability from "./Availability"
 
-function Info({infoTitle, title, subTitle, image, button, availability, color, backgroundColor, iconColor, display, flexDirection, itemTitle, responsiveItemTitle, largeTitle=false}) {
+function Info({ infoTitle, title, subTitle, image, button, availability, color, backgroundColor, wrapBackgroundColor, iconColor, display, flexDirection, itemTitle, responsiveItemTitle, largeTitle=false}) {
     const Hygiene = [
     {
       title: "Precautions",
@@ -25,7 +25,7 @@ function Info({infoTitle, title, subTitle, image, button, availability, color, b
     return (
         <>
             <InfoTitle display={largeTitle ? "flex" : "none"}>{infoTitle}</InfoTitle>
-            <InfoWrap display={display} flexDirection={flexDirection} >
+            <InfoWrap display={display} flexDirection={flexDirection} wrapBackgroundColor={wrapBackgroundColor} >
                 {image ?
                     <>
 

@@ -7,6 +7,12 @@ function Footer() {
   return (
     <FooterWrap>
         <Links>
+              <LinkSection >
+                  <h2>Ilfracombe <span><br />No 54</span></h2>
+                  <p style={{ fontSize: "12px" }}>Mobile - <a href="tel:07837 20143107837 201431" >07837 201431</a></p>
+                  <p >Email - <span style={{ fontSize: "10px" }}>e-propertylettingsltd@outlook.com</span></p>
+            </LinkSection>
+
             <LinkSection>
                 <h1>Find Us On</h1>
                 <img src={AirBnb} alt="AirBnb" />

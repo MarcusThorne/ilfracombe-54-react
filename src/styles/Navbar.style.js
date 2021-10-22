@@ -13,6 +13,7 @@ export const NavbarWrap = styled.nav`
   max-width: 2000px;
   transform: translate(-50%, 0%);
   left: 50%;
+  font-size: 14px;
 
   @media(min-width: 1024px) {
     justify-content: space-around;
@@ -38,9 +39,11 @@ export const NavLink = styled(Link)`
   margin: ${props => props.margin};
   padding: 1rem 0;
   display: ${props => props.display};
+  transition: 0.5s;
 
   &:hover {
     border-bottom: ${props => props.border};
+    transform: scale(1.01);
   }
 
   @media(min-width: 768px) {

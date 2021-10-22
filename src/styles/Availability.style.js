@@ -3,24 +3,26 @@ import { FaAirbnb } from 'react-icons/fa'
 import { BsArrowRight } from 'react-icons/bs'
 
 export const Next = styled(BsArrowRight)`
-    color: black;
+    color: #131B23;
     font-size: 16px;
 `
 
 export const AvailabilityWrap = styled.div`
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 20px rgba(255,255,255,0.2);
+    border: 1px solid rgba( 0,0,0,0.2 );
     border-radius: 8px;
     margin: 0 auto;
     margin-bottom: -10rem;
     width: 95%;
     margin-top: 2rem;
     background-color: white;
-    color: black;
+    color: #131B23;
+    max-width: 1300px;
 
     @media(min-width: 768px) {
         flex-direction: row;
         align-items: center;
-        border: 3px solid black;
+        border: 3px solid #131B23;
     }
 `
 
@@ -40,7 +42,8 @@ export const AvailabilityForm = styled.div`
         margin: auto 0;
         font-size: 20px;
         font-weight: 500;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #131B23;
+        color: #131B23;
   }
 `
 export const Options = styled.div`

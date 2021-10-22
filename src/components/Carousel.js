@@ -3,52 +3,55 @@ import Slider from "react-slick";
 import ApartmentOneImages from '../img/components/ApartmentOneImages'
 import ApartmentTwoImages from '../img/components/ApartmentTwoImages'
 import ApartmentThreeImages from '../img/components/ApartmentThreeImages'
-import { Image, Title, Icon, CarouselWrap } from '../styles/Carousel.style'
+import { Title, Image, IconLeft, IconRight, CarouselWrap, Rev, QuoteLeft, QuoteRight } from '../styles/Carousel.style'
+import Reviews from '../components/TestimonialsData'
 
-function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4, fontSize, marginTop}) {
-  const responsive = () => {
-    var settings = [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 426,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+function Carousel({title, floor, width, margin, padding="30px", subTitle, respond=true, slides=4, fontSize, marginTop, apartmentsPage=false, autoplay=true, arrows=false, review=false}) {
+    const responsive = () => {
+        var settings = [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
 
-    return (respond ? settings : false)
-  }
+        return (respond ? settings : false)
+    }
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: slides,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '30px',
-    autoplay: true,
-    focusOnSelected: true,
-    swipe: true,
-    swipeToSlide: true,
-    responsive: responsive()
-  };
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: slides,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: padding,
+        autoplay: autoplay,
+        focusOnSelected: true,
+        swipe: true,
+        swipeToSlide: true,
+        nextArrow: arrows && <IconRight />,
+        prevArrow: arrows && <IconLeft />,
+        responsive: responsive()
+    };
 
     const findImages = () => {
         if(floor === 1){
@@ -57,6 +60,8 @@ function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4
             return(ApartmentTwoImages)
         } else if(floor === 3) {
             return(ApartmentThreeImages)
+        } else if (review) {
+            return(Reviews)
         } else {
             var allImages = []
             ApartmentThreeImages.map(img => allImages.push(img))
@@ -68,19 +73,24 @@ function Carousel({title, floor, width, margin, subTitle, respond=true, slides=4
 
     return (
         <CarouselWrap width={width} margin={margin} marginTop={marginTop} >
-            <Title fontSize={fontSize}>
-                <div style={{display: "flex", flexDirection: "column"}}>
-                    <h1>{title}</h1>
-                    <p>{subTitle}</p>
-                </div>
-                <div>
-                    <Icon rotate="0" /><Icon />
-                </div>
-            </Title>
+            { !apartmentsPage &&
+                <Title fontSize={fontSize}>
+                    <div style={{display: "flex", flexDirection: "column"}}>
+                        <h1>{title}</h1>
+                        <p>{subTitle}</p>
+                    </div>
+                </Title>
+            }
 
             <Slider {...settings}>
-                {findImages().map(img =>
-                    <Image src={img.image} alt="image" />
+                {findImages().map(event =>
+                    review ?
+                        <Rev>
+                            <h1>{event.name}</h1>
+                            <p><QuoteLeft />{event.said}<QuoteRight /></p>
+                        </Rev>
+                    :
+                        <Image src={event.image} alt="image" />
                 )}
             </Slider>
         </CarouselWrap>
