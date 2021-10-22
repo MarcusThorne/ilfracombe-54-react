@@ -22,6 +22,7 @@ function Info({ infoTitle, title, subTitle, image, button, availability, color, 
     }
   ]
 
+
     return (
         <>
             <InfoTitle display={largeTitle ? "flex" : "none"}>{infoTitle}</InfoTitle>
@@ -37,7 +38,7 @@ function Info({ infoTitle, title, subTitle, image, button, availability, color, 
                             </GridItem>
                         )}
                     </>
-                     :
+                    :
                     <GridItem itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
                         <h1>{title}</h1>
                         <p>{subTitle}</p>

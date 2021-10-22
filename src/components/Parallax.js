@@ -4,6 +4,7 @@ import { Button } from '../styles/Button.style'
 import { FaMedal } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdVerified, MdOutlineCleaningServices } from 'react-icons/md'
+import { useSpring, animated } from 'react-spring'
 
 function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopBottom, speed=0.3, bottom, responsiveWidth, desktopTop, responsiveFontSize="60px", border="none"}) {
   const [offsetY, setOffsetY] = useState(0)
@@ -43,38 +44,47 @@ function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopB
     }
   }
 
+    const style1 = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        config: { duration: 1000 }
+    })
+
     return (
         <ParallaxWrap style={{ backgroundAttachment: `fixed` }}height={height} >
             <BackgroundImage src={img} alt="ilfracombe" bottom={bottom} laptopBottom={laptopBottom} desktopTop={desktopTop} laptopTop={laptopTop} transform={offsetY * speed } responsiveWidth={responsiveWidth} />
-            <ParallaxContent responsiveFontSize={responsiveFontSize} >
-                <h1>{title}</h1>
-                <p>{subTitle}</p>
 
-                { home &&
-                    <ParallaxLinks>
-                    <Button color="white" border="#131B23 1px solid"
-                        textColor="#131B23" backgroundHoverColor="#131B23"
-                        textHoverColor="white" fontSize="12px" width="80%" margin="auto" >Book Now</Button>
-                        <Or><div></div><i>or</i><div></div></Or>
-                    <Button color="#d6a449" border="#131B23 1px solid"
-                        textColor="white" backgroundHoverColor="#aa8038"
-                        fontSize="14px" width="80%" margin="auto" >Find Out More</Button>
-                    </ParallaxLinks>
-                }
+            <animated.div style={style1} >
+                <ParallaxContent responsiveFontSize={responsiveFontSize} >
+                    <h1>{title}</h1>
+                    <p>{subTitle}</p>
 
-                { about &&
-                    <ParallaxCards>
-                        {cards.map(card =>
-                            <div>
-                                {findIcon(card)}
-                                <h1>{card.title}</h1>
-                                <p>{card.description}</p>
-                                {card.id === 3 ? "" : <h4> </h4>}
-                            </div>
-                        )}
-                    </ParallaxCards>
-                }
-            </ParallaxContent>
+                    { home &&
+                        <ParallaxLinks>
+                        <Button color="white" border="#131B23 1px solid"
+                            textColor="#131B23" backgroundHoverColor="#131B23"
+                            textHoverColor="white" fontSize="12px" width="80%" margin="auto" >Book Now</Button>
+                            <Or><div></div><i>or</i><div></div></Or>
+                        <Button color="#d6a449" border="#131B23 1px solid"
+                            textColor="white" backgroundHoverColor="#aa8038"
+                            fontSize="14px" width="80%" margin="auto" >Find Out More</Button>
+                        </ParallaxLinks>
+                    }
+
+                    { about &&
+                        <ParallaxCards >
+                            {cards.map(card =>
+                                <div>
+                                    {findIcon(card)}
+                                    <h1>{card.title}</h1>
+                                    <p>{card.description}</p>
+                                    {card.id === 3 ? "" : <h4> </h4>}
+                                </div>
+                            )}
+                        </ParallaxCards>
+                    }
+                </ParallaxContent>
+            </animated.div>
         </ParallaxWrap>
     )
 }
