@@ -17,7 +17,9 @@ function Footer() {
 
             <LinkSection>
                 <h1>Find Us On</h1>
-                <img src={AirBnb} alt="AirBnb" />
+                  <a href="https://www.airbnb.co.uk/users/show/180558917">
+                    <img src={AirBnb} alt="AirBnb" />
+                </a>
             </LinkSection>
 
             <LinkSection>
@@ -39,9 +41,9 @@ function Footer() {
 
             <LinkSection>
                 <h1>Book a Stay</h1>
-                <Link to="/">Book Now</Link>
+                <a href="https://www.airbnb.co.uk/users/show/180558917">Book Now</a>
                 <Link to="/apartments">Apartments</Link>
-                <Link to="/contact">Activities</Link>
+                <Link to="/contact">Get In Touch</Link>
             </LinkSection>
         </Links>
 

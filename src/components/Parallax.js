@@ -5,6 +5,7 @@ import { FaMedal } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdVerified, MdOutlineCleaningServices } from 'react-icons/md'
 import { useSpring, animated } from 'react-spring'
+import { Link } from 'react-router-dom'
 
 function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopBottom, speed=0.3, bottom, responsiveWidth, desktopTop, responsiveFontSize="60px", border="none"}) {
   const [offsetY, setOffsetY] = useState(0)
@@ -61,13 +62,17 @@ function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopB
 
                     { home &&
                         <ParallaxLinks>
-                        <Button color="white" border="#131B23 1px solid"
-                            textColor="#131B23" backgroundHoverColor="#131B23"
-                            textHoverColor="white" fontSize="12px" width="80%" margin="auto" >Book Now</Button>
+                        <a href="https://www.airbnb.co.uk/users/show/180558917">
+                            <Button color="white" border="#131B23 1px solid"
+                                textColor="#131B23" backgroundHoverColor="#131B23"
+                                textHoverColor="white" fontSize="12px" width="80%" margin="auto" >Book Now</Button>
+                        </a>
                             <Or><div></div><i>or</i><div></div></Or>
-                        <Button color="#d6a449" border="#131B23 1px solid"
-                            textColor="white" backgroundHoverColor="#aa8038"
-                            fontSize="14px" width="80%" margin="auto" >Find Out More</Button>
+                        <Link to="/apartments" >
+                            <Button color="#d6a449" border="#131B23 1px solid"
+                                textColor="white" backgroundHoverColor="#aa8038"
+                                fontSize="14px" width="80%" margin="auto" >Find Out More</Button>
+                        </Link>
                         </ParallaxLinks>
                     }
 
