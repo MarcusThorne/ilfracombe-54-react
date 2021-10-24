@@ -4,10 +4,7 @@ import { Button } from '../styles/Button.style'
 // import { useState } from 'react'
 
 function Availability({ color, backgroundHoverColor, iconColor }) {
-    var submitButton = document.querySelector("#availabilitySubmit");
-
-    if (submitButton) {
-        submitButton.addEventListener("click", () => {
+    const submitForm = () => {
         var apartmentNumber = document.querySelector("#apartmentNumber").value || "";
         var checkIn = document.querySelector("#checkIn").value || "";
         var checkOut = document.querySelector("#checkOut").value || "";
@@ -24,7 +21,6 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
             checkOut;
 
         window.open(link);
-        });
     }
 
     return (
@@ -46,11 +42,11 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
                     <CheckIn>
                         <Op>
-                            <input type="date" id="checkIn" value={Date()} />
+                            <input type="date" id="checkIn" placeholder="dd/mm/yyyy" />
                         </Op>
                         <Next />
                         <Op>
-                            <input type="date" id="checkOut" value={Date()} />
+                            <input type="date" id="checkOut" placeholder="dd/mm/yyyy" />
                         </Op>
                     </CheckIn>
 
@@ -66,7 +62,7 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
                     </Option>
                 </Options>
 
-                <Button id="availabilitySubmit" padding="1rem 4rem" fontSize="18px" style={{borderRadius: "4px", maxWidth: "30rem", margin: "0 auto"}}>Search</Button>
+                <Button id="availabilitySubmit" onClick={() => submitForm()} padding="1rem 4rem" fontSize="18px" style={{borderRadius: "4px", maxWidth: "30rem", margin: "0 auto"}}>Search</Button>
             </AvailabilityForm>
         </AvailabilityWrap>
     )

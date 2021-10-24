@@ -1,9 +1,9 @@
 import { ActivityWrap, ActivitiesWrap, ActivityLocation, Next, Link } from '../styles/Activities.style'
 import Advert from '../components/AdvertData'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '../styles/Button.style'
 
-function Activity({name, image}) {
+function Activity() {
     const [show, setShow] = useState(8)
     const [ads, setAds] = useState(Advert)
 
@@ -20,13 +20,23 @@ function Activity({name, image}) {
     )
 
     const filter = (value) => {
-        console.log(value)
         value === "All" ? setAds(() => Advert) : setAds(() => Advert.filter(ad => ad.category === value))
         setShow(12)
     }
 
     var count = ads.length
     var Ads = (ads.slice(0, show))
+
+    useEffect(() => {
+        var url = window.location.href
+        var query = url.toString().includes('?')
+
+        if (query) {
+            var params = url.toString().split('?').pop()
+            var capitalized = (params[0].toUpperCase() + params.slice(1))
+            filter(capitalized)
+        }
+    }, [])
 
     return(
         <>
@@ -35,7 +45,7 @@ function Activity({name, image}) {
                     onClick={(event) => filter(event.target.textContent)}>All</Button>
                 {categories.map(category =>
                     <Button color="lightgray" textColor="white" width="max-content" borderRadius="4px" margin="0.2rem" padding="0.4rem" fontSize="18px" responsiveFontSize="22px"
-                    onClick={() => filter(category)}>{category}</Button>
+                        onClick={() => filter(category)}>{category}</Button>
                 )}
             </div>
 

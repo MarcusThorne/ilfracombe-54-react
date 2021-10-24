@@ -30,6 +30,7 @@ export const VideoWrap = styled.div`
 
         @media(min-width: 1440px) {
             height: 80rem;
+            margin-top: 5rem;
         }
     }
 `

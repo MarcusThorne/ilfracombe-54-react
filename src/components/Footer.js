@@ -30,11 +30,11 @@ function Footer() {
 
             <LinkSection>
                 <h1>Activites</h1>
-                <Link to="/">Shops</Link>
-                <Link to="/apartments">Museums</Link>
-                <Link to="/activities">Theatre & Cinema</Link>
-                <Link to="/contact">Places To Visit</Link>
-                <Link to="/contact">Kids Activities</Link>
+                <Link to="/activities?shop">Shops</Link>
+                <Link to="/activities?museum">Museums</Link>
+                <Link to="/activities?entertainment">Entertianment</Link>
+                <Link to="/activities?explore">Explore</Link>
+                <Link to="/activities?kids">Kids Activities</Link>
             </LinkSection>
 
             <LinkSection>
