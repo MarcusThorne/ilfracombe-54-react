@@ -5,6 +5,8 @@ export const FooterWrap = styled.div`
     padding-top: 2rem;
     border-top: 1px solid rgba(0,0,0,0.1);
     color: #131B23;
+    max-width: 100%;
+    overflow: hidden;
 
     h1 {
         font-size: 16px;

@@ -31,6 +31,7 @@ export const ParallaxWrap = styled.div`
   min-height: 34rem;
   position: relative;
   overflow: hidden;
+  max-width: 100vw;
 
   span {
       color: #D6A449;
@@ -71,6 +72,8 @@ export const ParallaxContent = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+    overflow: hidden;
+  max-width: 100vw;
 
   @media(min-width: 520px) {
     background-color: rgba(255,255,255,0.8);
@@ -87,8 +90,8 @@ export const ParallaxContent = styled.div`
     overflow: hidden;
     white-space: nowrap;
     animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    typing 1.5s steps(40, end),
+    blink-caret .4s step-end infinite;
 
     @keyframes typing {
         from { width: 0 }
@@ -112,9 +115,10 @@ export const ParallaxContent = styled.div`
 
   p {
     font-size: 18px;
-    margin: 0;
+    margin: 0 auto;
     margin-top: -10px;
     color: #263647;
+    max-width: 70vw;
 
     @media(min-width: 768px) {
       font-size: 22px;

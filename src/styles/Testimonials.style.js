@@ -6,6 +6,6 @@ export const TestWrap = styled.div`
   align-items: center;
   background-color: rgb(240, 240, 240);
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   color: #D6A449;
 `

@@ -10,10 +10,11 @@ export const NavbarWrap = styled.nav`
   top: 0;
   z-index: 100;
   width: 100%;
-  max-width: 2000px;
-  transform: translate(-50%, 0%);
-  left: 50%;
+  max-width: 100%;
+  left: 0;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 
   @media(min-width: 1024px) {
     justify-content: space-around;

@@ -2,6 +2,8 @@ import { FooterWrap, Copyright, Links, LinkSection } from '../styles/Footer.styl
 import AirBnb from '../img/airbnb.png'
 import { Link } from 'react-router-dom'
 import { BiCopyright } from 'react-icons/bi'
+import { BsPhone } from 'react-icons/bs'
+import { HiOutlineMail } from 'react-icons/hi'
 
 function Footer() {
   return (
@@ -9,8 +11,8 @@ function Footer() {
         <Links>
               <LinkSection >
                   <h2>Ilfracombe <span><br />No 54</span></h2>
-                  <p style={{ fontSize: "12px" }}>Mobile - <a href="tel:07837 20143107837 201431" >07837 201431</a></p>
-                  <p >Email - <span style={{ fontSize: "10px" }}>e-propertylettingsltd@outlook.com</span></p>
+                  <p><BsPhone style={{color: "black"}} /> <a href="tel:07837 20143107837 201431" >07837 201431</a></p>
+                  <p><HiOutlineMail style={{ color: "black" }} /> e-propertylettingsltd@ <br />outlook.com</p>
             </LinkSection>
 
             <LinkSection>

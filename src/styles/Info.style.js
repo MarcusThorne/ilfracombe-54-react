@@ -4,7 +4,7 @@ export const InfoWrap = styled.div`
     background-color: ${props => props.wrapBackgroundColor};
     color: white;
     text-align: center;
-    padding: 5rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
     border: #131B23;
 
     @media(min-width: 768px){
