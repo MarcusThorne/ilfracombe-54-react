@@ -30,8 +30,22 @@ export const Links = styled.div`
   margin: 0 2rem;
 
   div {
-    display: flex;
     align-items: center;
+    display: flex;
+
+    a {
+        display: none;
+        visibility: hidden;
+        text-decoration: none;
+        margin-left: 2rem;
+    }
+
+    @media(min-width: 768px) {
+        a {
+            display: flex;
+            visibility: visible;
+        }
+    }
   }
 `
 export const NavLink = styled(Link)`
