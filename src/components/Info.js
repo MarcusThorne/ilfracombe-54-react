@@ -30,8 +30,8 @@ function Info({ infoTitle, title, subTitle, image, button, availability, color, 
                 {image ?
                     <>
 
-                        {Hygiene.map(h =>
-                            <GridItem itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
+                        {Hygiene.map((h, index) =>
+                            <GridItem key={index} itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
                                 <img src={h.img} alt={h.title} />
                                 <h1>{h.title}</h1>
                                 <p>{h.description}</p>

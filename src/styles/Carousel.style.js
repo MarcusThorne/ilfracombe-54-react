@@ -69,6 +69,7 @@ export const Title = styled.div`
     @media(min-width: 768px){
         max-width: 60rem;
         margin: 2rem;
+        margin-left: 14%;
 
         h1 {
             font-size: ${props => props.fontSize};

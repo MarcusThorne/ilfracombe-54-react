@@ -83,14 +83,14 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
             }
 
             <Slider {...settings}>
-                {findImages().map(event =>
+                {findImages().map((event, index) =>
                     review ?
-                        <Rev>
+                        <Rev key={index}>
                             <h1>{event.name}</h1>
                             <p><QuoteLeft />{event.said}<QuoteRight /></p>
                         </Rev>
                     :
-                        <Image src={event.image} alt="image" />
+                        <Image key={index} src={event.image} alt="image" />
                 )}
             </Slider>
         </CarouselWrap>

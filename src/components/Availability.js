@@ -33,7 +33,7 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
                 <Options>
                     <Option>
-                        <select id="apartmentNumber" placeholder="Apartment Number" >
+                        <select id="apartmentNumber" placeholder="Apartment Number" defaultValue="34943853" >
                             <option value="34943853">Apartment 1</option>
                             <option value="23996662">Apartment 2</option>
                             <option value="34943970">In The Attic</option>
@@ -42,16 +42,16 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
                     <CheckIn>
                         <Op>
-                            <input type="date" id="checkIn" placeholder="dd/mm/yyyy" />
+                            <input type="date" id="checkIn" placeholder="dd/mm/yyyy" defaultValue="yyyy-mm-dd" />
                         </Op>
                         <Next />
                         <Op>
-                            <input type="date" id="checkOut" placeholder="dd/mm/yyyy" />
+                            <input type="date" id="checkOut" placeholder="dd/mm/yyyy" defaultValue="yyyy-mm-dd" />
                         </Op>
                     </CheckIn>
 
                     <Option>
-                        <select id="guests">
+                        <select id="guests" defaultValue="1 Guest">
                             <option>1 Guest</option>
                             <option>2 Guests</option>
                             <option>3 Guests</option>

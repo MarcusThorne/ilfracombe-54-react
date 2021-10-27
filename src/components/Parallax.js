@@ -78,8 +78,8 @@ function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopB
 
                     { about &&
                         <ParallaxCards >
-                            {cards.map(card =>
-                                <div>
+                            {cards.map((card, index) =>
+                                <div key={index}>
                                     {findIcon(card)}
                                     <h1>{card.title}</h1>
                                     <p>{card.description}</p>

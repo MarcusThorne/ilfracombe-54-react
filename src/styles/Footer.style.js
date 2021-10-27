@@ -23,7 +23,6 @@ export const FooterWrap = styled.div`
     }
 
     a {
-        text-decoration: none;
         color: rgb(100, 100, 100);
         text-decoration: underline;
     }

@@ -57,6 +57,7 @@ export const NavLink = styled(Link)`
   transition: 0.5s;
 
   &:hover {
+      text-decoration: none;
     border-bottom: ${props => props.border};
     transform: scale(1.01);
   }

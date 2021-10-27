@@ -12,7 +12,7 @@ function Footer() {
               <LinkSection >
                   <h2>Ilfracombe <span><br />No 54</span></h2>
                   <p><BsPhone style={{color: "black"}} /> <a href="tel:07837 20143107837 201431" >07837 201431</a></p>
-                  <p><HiOutlineMail style={{ color: "black" }} /> e-propertylettingsltd@ <br />outlook.com</p>
+                  <p><HiOutlineMail style={{ color: "black" }} />e-propertylettingsltd@ <br />outlook.com</p>
             </LinkSection>
 
             <LinkSection>

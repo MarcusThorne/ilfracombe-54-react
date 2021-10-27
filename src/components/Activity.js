@@ -43,15 +43,15 @@ function Activity() {
             <div style={{display: "flex", width: "70%", margin: "0 auto", flexWrap: "wrap", marginBottom: "2rem"}}>
                 <Button color="lightgray" textColor="white" width="max-content" borderRadius="4px" margin="0.2rem" padding="0.4rem" fontSize="18px" responsiveFontSize="22px"
                     onClick={(event) => filter(event.target.textContent)}>All</Button>
-                {categories.map(category =>
-                    <Button color="lightgray" textColor="white" width="max-content" borderRadius="4px" margin="0.2rem" padding="0.4rem" fontSize="18px" responsiveFontSize="22px"
+                {categories.map((category, index) =>
+                    <Button key={index} color="lightgray" textColor="white" width="max-content" borderRadius="4px" margin="0.2rem" padding="0.4rem" fontSize="18px" responsiveFontSize="22px"
                         onClick={() => filter(category)}>{category}</Button>
                 )}
             </div>
 
             <ActivitiesWrap style={{ marginBottom: "4rem" }}>
-                {Ads.map(ad =>
-                    <Link href={ad.link} >
+                {Ads.map((ad, index) =>
+                    <Link href={ad.link} key={index} >
                         <ActivityWrap image={ad.image} key={ad.name} >
                             <p>{ad.name}</p>
                             <ActivityLocation>{ad.location}</ActivityLocation>

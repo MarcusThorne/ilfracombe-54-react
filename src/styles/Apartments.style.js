@@ -38,7 +38,7 @@ export const ApartmentWrap = styled.div`
 `
 
 export const ApartmentsWrap = styled.div`
-    margin: 15rem auto 5rem auto;
+    margin: 13rem auto 5rem auto;
 
     @media(min-width: 980px) {
         display: grid;
@@ -143,4 +143,15 @@ export const ApartmentInfo = styled.div`
   font-weight: 600;
   margin: 0 auto;
   margin-bottom: -1rem;
+`
+
+export const ApartmentFloor = styled.h2`
+    text-align: center;
+    margin: auto 0;
+    text-decoration: underline;
+    color: "#131B23";
+
+    @media(min-width: 980px) {
+        margin-bottom: 2rem;
+    }
 `
