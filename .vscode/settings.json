@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "smart"
+=======
     "editor.acceptSuggestionOnEnter": "smart",
     "editor.acceptSuggestionOnCommitCharacter": false
+>>>>>>> d474566f631adeaab4be2c37dda776034f58e1cd
 }
