@@ -8,14 +8,18 @@ export const BackgroundImage = styled.img`
   z-index: -1;
   bottom: 0;
 
-  @media(min-width: 426px) {
-    transform: translateY(${ props => props.transform }px);
-  }
+    @media(min-width: 426px) {
+        transform: translateY(${ props => props.transform }px);
+        bottom: ${props => props.bottom};
+    }
 
-  @media(min-width: 1024px ) {
-    bottom: ${props => props.laptopBottom};
-    top: ${props => props.laptopTop};
-  }
+    @media(min-width: 1024px ) {
+        top: ${props => props.laptopTop};
+    }
+
+    @media(min-width: 1440px) {
+        top: ${props => props.desktopTop};
+    }
 `
 
 export const ParallaxWrap = styled.div`
@@ -27,17 +31,19 @@ export const ParallaxWrap = styled.div`
   min-height: 34rem;
   position: relative;
   overflow: hidden;
-  margin-top: 2rem;
-  padding: 5rem 0;
+  max-width: 100vw;
+
+  span {
+      color: #D6A449;
+  }
 
   @media(min-width: 425px) {
     height: ${props => props.tabletHeight};
-    min-height: 0;
+    min-height: 30rem;
   }
 
   @media(min-width: 1024px) {
-    background-size: cover;
-    background-position: top;
+    min-height: 40rem;
   }
 `
 
@@ -45,6 +51,9 @@ export const Or = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
 
   div {
     border-bottom: 1px solid rgba(0,0,0,0.8);
@@ -63,46 +72,53 @@ export const ParallaxContent = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+    overflow: hidden;
+  max-width: 100vw;
 
-  @media(min-width: 768px) {
+  @media(min-width: 520px) {
     background-color: rgba(255,255,255,0.8);
     padding: 2rem 4rem;
     border-radius: 4px;
   }
 
   h1 {
+      color: #131B23;
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 0;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:
+    typing 1.5s steps(40, end),
+    blink-caret .4s step-end infinite;
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+    }
 
     @media(min-width: 425px) {
-      font-size: 40px;
+      font-size: 36px;
     }
 
-    @media(min-width: 768px) {
-      font-size: 45px;
-    }
-  }
-
-  span {
-    color: #d6a449;
-    font-size: 25px;
-
-    @media(min-width: 425px) {
-      font-size: 30px;
-    }
-
-    @media(min-width: 768px) {
-      font-size: 40px;
+    @media(min-width: 600px) {
+        font-size: ${props => props.responsiveFontSize};
+        margin-top: 0;
     }
   }
 
   p {
     font-size: 18px;
-    margin: 0;
+    margin: 0 auto;
     margin-top: -10px;
+    color: #263647;
+    max-width: 70vw;
 
     @media(min-width: 768px) {
       font-size: 22px;
@@ -122,49 +138,57 @@ export const ParallaxLinks = styled.p`
 `
 
 export const ParallaxCards = styled.div`
-  max-width: 30rem;
-  width: 90%;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-  margin: 0 auto;
-  margin-bottom: 55%;
+    max-width: 30rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    margin-bottom: 55%;
 
-  @media(min-width: 768px) {
-    flex-direction: row;
-    max-width: 40rem;
-    align-items: stretch;
-    border-radius: 4px;
-    margin-bottom: 0;
-    padding: 1rem 2rem
-  }
-
-  div {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    transition: 0.2s;
-    width: 100%;
-
-    &:hover {
-      transform: scale(1.05);
+    @media(min-width: 520px) {
+        flex-direction: column;
+        max-width: 15rem;
+        align-items: start;
+        border-radius: 4px;
+        margin: auto;
+        margin-bottom: 0;
+        padding: 1rem 2rem;
     }
 
-    svg {
-      font-size: 24px;
+    @media(min-width: 720px) {
+        flex-direction: row;
+        max-width: 40rem;
     }
 
-    p {
-      font-size: 14px;
-      margin-top: 0.5rem;
-    }
-  }
+    div {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        transition: 0.2s;
+        width: 100%;
 
-  h1 {
-    font-size: 20px;
-    margin: 0 auto;
-  }
+        &:hover {
+        transform: scale(1.05);
+        }
+
+        svg {
+        font-size: 24px;
+        }
+
+        p {
+        font-size: 14px;
+        margin-top: 0.5rem;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 0 auto;
+    }
 `
+
+BackgroundImage.defaultProps = {
+    bottom: "0",
+}

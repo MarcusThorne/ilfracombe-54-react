@@ -3,8 +3,16 @@ import { BsArrowRight } from 'react-icons/bs'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 
 export const Next = styled(BsArrowRight)`
-  color: white;
-  font-size: 25px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 `
 
 export const Info = styled(AiOutlineInfoCircle)`
@@ -23,6 +31,7 @@ export const ActivityWrap = styled.div`
   background-size: cover;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-shadow: 1px 1px 10px rgba(0,0,0,1);
@@ -32,20 +41,14 @@ export const ActivityWrap = styled.div`
   position: relative;
   border-radius: 10px;
   font-size: 30px;
+  transition: 0.5s;
 
-  @media(min-width: 768px ) {
-    margin: 1rem auto;
+  &:hover {
+    transform: scale(1.04);
   }
 
-  button {
-    position: absolute;
-    right: 0;
-    bottom: 1rem;
-    padding: 0.5rem 1.5rem;
-    background-color: rgba(0,0,0,0.7);
-    border: none;
-    font-size: 18px;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+  @media(min-width: 768px ) {
+    margin: 1rem;
   }
 `
 
@@ -57,20 +60,27 @@ export const ActivitiesWrap = styled.div`
   @media(min-width: 768px ) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
   }
 
   @media(min-width: 1024px ) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
   }
 
   @media(min-width: 1440px ) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
   }
+`
+
+export const ActivityLocation = styled.p`
+    font-size: 14px;
+    margin-top: -2rem;
+`
+
+export const Link = styled.a`
+    text-decoration: none;
 `
 
 Next.defaultProps = {

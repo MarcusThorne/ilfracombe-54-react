@@ -13,8 +13,8 @@ function Sidebar(props) {
     <SidebarWrap sidebar={props.sidebar} onClick={props.toggleSidebar} >
       <NavLink {...NavlinkStyles} to="/">Home</NavLink>
       <NavLink {...NavlinkStyles} to="/apartments">Apartments</NavLink>
-      <NavLink {...NavlinkStyles} to="/activities">Activities</NavLink>
-      <NavLink {...NavlinkStyles} to="/contact">Contact</NavLink>
+      <NavLink {...NavlinkStyles} to="/activities">Things To do</NavLink>
+      <NavLink {...NavlinkStyles} to="/contact">Get In Touch</NavLink>
       <NavLink {...NavlinkStyles} to="/airbnb"><Button>AirBnb</Button></NavLink>
       <CloseSidebar onClick={props.toggleSidebar} />
     </SidebarWrap>

@@ -4,6 +4,8 @@ import { FaTimes } from 'react-icons/fa'
 export const SidebarWrap = styled.div`
   height: 100%;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   display: ${props => props.display};
   flex-direction: column;
   align-items: center;

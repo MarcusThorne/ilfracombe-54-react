@@ -6,10 +6,15 @@ export const NavbarWrap = styled.nav`
   display: flex;
   justify-content: space-between;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
+  max-width: 100%;
+  left: 0;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 
   @media(min-width: 1024px) {
     justify-content: space-around;
@@ -25,8 +30,22 @@ export const Links = styled.div`
   margin: 0 2rem;
 
   div {
-    display: flex;
     align-items: center;
+    display: flex;
+
+    a {
+        display: none;
+        visibility: hidden;
+        text-decoration: none;
+        margin-left: 2rem;
+    }
+
+    @media(min-width: 768px) {
+        a {
+            display: flex;
+            visibility: visible;
+        }
+    }
   }
 `
 export const NavLink = styled(Link)`
@@ -35,15 +54,22 @@ export const NavLink = styled(Link)`
   margin: ${props => props.margin};
   padding: 1rem 0;
   display: ${props => props.display};
+  transition: 0.5s;
 
   &:hover {
+      text-decoration: none;
     border-bottom: ${props => props.border};
+    transform: scale(1.01);
   }
 
   @media(min-width: 768px) {
     display: flex;
     margin: 0 1rem;
   }
+
+    @media(min-width: 1024px) {
+        margin: 0 2rem;
+    }
 `
 
 export const Icon = styled(FaBars)`

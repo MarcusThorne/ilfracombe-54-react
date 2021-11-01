@@ -1,10 +1,11 @@
-import { InfoWrap } from "../styles/Info.style"
+import { InfoWrap, GridItem, InfoTitle } from "../styles/Info.style"
 import hygieneImg from '../img/hygiene.jpg'
 import cautionImg from '../img/caution.jpg'
 import limitImg from '../img/limit.jpg'
 import { Button } from "../styles/Button.style"
+import Availability from "./Availability"
 
-function Info({title, subTitle, image, button}) {
+function Info({ infoTitle, title, subTitle, image, button, availability, color, backgroundColor, wrapBackgroundColor, iconColor, display, flexDirection, itemTitle, responsiveItemTitle, largeTitle=false}) {
     const Hygiene = [
     {
       title: "Precautions",
@@ -21,26 +22,37 @@ function Info({title, subTitle, image, button}) {
     }
   ]
 
-  return (
-    <InfoWrap>
-      {image ?
-        Hygiene.map(h =>
-          <div>
-            <img src={h.img} alt={h.title} />
-            <h1>{h.title}</h1>
-            <p>{h.description}</p>
-          </div>
-        ) :
-        <div>
-          <h1>{title}</h1>
-          <p>{subTitle}</p>
-          {button &&
-            <Button margin="1rem 0">{button}</Button>
-          }
-        </div>
-      }
-    </InfoWrap>
-  )
+
+    return (
+        <>
+            <InfoTitle display={largeTitle ? "flex" : "none"}>{infoTitle}</InfoTitle>
+            <InfoWrap display={display} flexDirection={flexDirection} wrapBackgroundColor={wrapBackgroundColor} >
+                {image ?
+                    <>
+
+                        {Hygiene.map((h, index) =>
+                            <GridItem key={index} itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
+                                <img src={h.img} alt={h.title} />
+                                <h1>{h.title}</h1>
+                                <p>{h.description}</p>
+                            </GridItem>
+                        )}
+                    </>
+                    :
+                    <GridItem itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
+                        <h1>{title}</h1>
+                        <p>{subTitle}</p>
+                        {button &&
+                            <Button margin="1rem 0">{button}</Button>
+                        }
+                    </GridItem>
+                }
+                {availability &&
+                    <Availability color={color} backgroundColor={backgroundColor} iconColor={iconColor} />
+                }
+            </InfoWrap>
+        </>
+    )
 }
 
 export default Info
