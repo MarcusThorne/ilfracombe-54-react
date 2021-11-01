@@ -49,23 +49,44 @@ export const Links = styled.div`
   }
 `
 export const NavLink = styled(Link)`
-  text-decoration: none;
-  color: rgb(20, 20, 20);
-  margin: ${props => props.margin};
-  padding: 1rem 0;
-  display: ${props => props.display};
-  transition: 0.5s;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    height: 100%;
+    align-items: center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    display: ${props => props.display};
 
-  &:hover {
-      text-decoration: none;
-    border-bottom: ${props => props.border};
-    transform: scale(1.01);
-  }
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #D6A449;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
 
-  @media(min-width: 768px) {
-    display: flex;
-    margin: 0 1rem;
-  }
+    &:hover:before {
+        right: 0;
+    }
+
+    @media(min-width: 768px) {
+        display: flex;
+        margin: 0 1rem;
+    }
 
     @media(min-width: 1024px) {
         margin: 0 2rem;
@@ -83,6 +104,6 @@ export const Icon = styled(FaBars)`
 
 NavLink.defaultProps = {
   display: "none",
-  border: "2px solid #D6A449",
+  border: "4px solid #D6A449",
   margin: "auto 1.5rem"
 }

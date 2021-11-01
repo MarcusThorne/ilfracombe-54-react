@@ -50,7 +50,8 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
         swipeToSlide: true,
         nextArrow: arrows && <IconRight />,
         prevArrow: arrows && <IconLeft />,
-        responsive: responsive()
+        responsive: responsive(),
+        arrows: arrows
     };
 
     const findImages = () => {

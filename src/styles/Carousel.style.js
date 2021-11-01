@@ -30,17 +30,13 @@ export const Rev = styled.div`
 `
 
 export const QuoteLeft = styled(ImQuotesLeft)`
-    position: absolute;
-    left: 10px;
-    top: 30px;
-    color: rgb(150,150,150)
+    margin-right: 1rem;
+    color: rgb(80,80,80)
 `
 
 export const QuoteRight = styled(ImQuotesRight)`
-    position: absolute;
-    right: 10px;
-    bottom: 30px;
-color: rgb(150,150,150)
+    margin-left: 1rem;
+    color: rgb(80,80,80)
 `
 
 export const Title = styled.div`
