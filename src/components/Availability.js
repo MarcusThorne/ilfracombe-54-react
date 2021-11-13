@@ -5,10 +5,15 @@ import { Button } from '../styles/Button.style'
 
 function Availability({ color, backgroundHoverColor, iconColor }) {
     const submitForm = () => {
-        var apartmentNumber = document.querySelector("#apartmentNumber").value || "";
+      var apartmentNumber = document.querySelector("#apartmentNumber").value || "34943853";
         var checkIn = document.querySelector("#checkIn").value || "";
         var checkOut = document.querySelector("#checkOut").value || "";
-        var guests = document.querySelector("#guests").value || "";
+        if (checkOut <= checkIn) {
+          checkIn = ""
+          checkOut = ""
+        }
+
+        var guests = document.querySelector("#guests").value || "1";
 
         var link =
             "https://www.airbnb.co.uk/rooms/" +
@@ -33,7 +38,7 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
                 <Options>
                     <Option>
-                        <select id="apartmentNumber" placeholder="Apartment Number" defaultValue="34943853" >
+                        <select id="apartmentNumber" placeholder="Apartment Number">
                             <option value="34943853">Apartment 1</option>
                             <option value="23996662">Apartment 2</option>
                             <option value="34943970">In The Attic</option>
@@ -42,22 +47,22 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
                     <CheckIn>
                         <Op>
-                            <input type="date" id="checkIn" placeholder="dd/mm/yyyy" defaultValue="yyyy-mm-dd" />
+                            <input type="date" id="checkIn" placeholder="dd/mm/yyyy"/>
                         </Op>
                         <Next />
                         <Op>
-                            <input type="date" id="checkOut" placeholder="dd/mm/yyyy" defaultValue="yyyy-mm-dd" />
+                            <input type="date" id="checkOut" placeholder="dd/mm/yyyy"/>
                         </Op>
                     </CheckIn>
 
                     <Option>
-                        <select id="guests" defaultValue="1 Guest">
-                            <option>1 Guest</option>
-                            <option>2 Guests</option>
-                            <option>3 Guests</option>
-                            <option>4 Guests</option>
-                            <option>5 Guests</option>
-                            <option>6 Guests</option>
+                        <select id="guests">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
                         </select>
                     </Option>
                 </Options>
