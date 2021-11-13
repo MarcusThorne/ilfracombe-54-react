@@ -156,7 +156,7 @@ const Adverts = [
         description: "We are a family run wildlife & dinosaur park set in over 28 acres of spectacular gardens within the North Devon Area of Outstanding Natural Beauty.",
         phone: "01271 882486",
         address: "Combe Martin, Ilfracombe, EX34 0NG",
-        link: "https://cmwdp.co.uk/Watermouth Castle",
+         link: "https://cmwdp.co.uk/",
         image: Tiki
     }, {
         name: "Watermouth Castle (Adventure Park)",
@@ -174,7 +174,7 @@ const Adverts = [
       description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
       phone: "01271 867474",
       address: "A399, Ilfracombe, EX34 9SL",
-      link: "https://www.watermouthcastle.com/",
+    link: "https://www.thethatchcroyde.co.uk/",
       image: Thatch
     }, {
         name: "Squires (Fish and Chips)",
@@ -183,7 +183,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://www.squiresfishrestaurant.co.uk/",
         image: FishAndChips
     }, {
         name: "The Admiral Collingwood",
@@ -192,7 +192,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://www.jdwetherspoon.com/pubs/all-pubs/england/devon/the-admiral-collingwood-ilfracombe",
         image: Pub
     }, {
         name: "The Water Gate",
@@ -201,7 +201,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://www.jdwetherspoon.com/pubs/all-pubs/england/devon/the-water-gate-barnstaple",
         image: Spoons
     }, {
         name: "Ilfracombe Golf Club",
@@ -210,7 +210,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://ilfracombegolfclub.com/",
         image: Golf
     }, {
         name: "Tarka Tennis",
@@ -219,7 +219,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://www.leisurecentre.com/tarka-tennis/tennis/page",
         image: Tennis
     }, {
         name: "Lesuire Center",
@@ -228,7 +228,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://www.leisurecentre.com/",
         image: Swimming
     }, {
         name: "Down The Rabbit Hole",
@@ -237,7 +237,7 @@ const Adverts = [
         description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
+    link: "https://www.escapedowntherabbithole.com/",
         image: Bar
     }
 ]
