@@ -8,7 +8,7 @@ export const NavbarWrap = styled.nav`
   background-color: white;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 100000;
   width: 100%;
   max-width: 100%;
   left: 0;
