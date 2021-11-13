@@ -13,6 +13,14 @@ import Milkyway from '../img/activities/milkyway.jpg'
 import Bigsheep from '../img/activities/bigsheep.jpg'
 import Exmoor from '../img/activities/exmoor.jpg'
 import Water from '../img/activities/water.jpg'
+import Bar from '../img/activities/bar.jpg'
+import FishAndChips from '../img/activities/fish-and-chips.jpg'
+import Golf from '../img/activities/golf.jpg'
+import Pub from '../img/activities/pub.jpg'
+import Spoons from '../img/activities/spoons.jpg'
+import Tennis from '../img/activities/tennis.jpg'
+import Thatch from '../img/activities/thatch.jpg'
+import Swimming from '../img/activities/swimming.jpg'
 
 const Adverts = [
     {
@@ -160,15 +168,14 @@ const Adverts = [
         link: "https://www.watermouthcastle.com/",
         image: Water
     }, {
-        // info needs updating from here
-        name: "The Thatch",
-        location: "Croyde",
-        category: "Resturant/ Pub",
-        description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
-        phone: "01271 867474",
-        address: "A399, Ilfracombe, EX34 9SL",
-        link: "https://www.watermouthcastle.com/",
-        image: Water
+      name: "The Thatch",
+      location: "Croyde",
+      category: "Resturant/ Pub",
+      description: "One of the West Country’s premier Family Tourist Attractions where you can enjoy a Victorian Castle full of eclectic treasures, nostalgic displays and curios, a theme park including rides and play areas, and beautiful landscaped gardens.",
+      phone: "01271 867474",
+      address: "A399, Ilfracombe, EX34 9SL",
+      link: "https://www.watermouthcastle.com/",
+      image: Thatch
     }, {
         name: "Squires (Fish and Chips)",
         location: "Braunton",
@@ -177,7 +184,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: FishAndChips
     }, {
         name: "The Admiral Collingwood",
         location: "Ilfracombe",
@@ -186,7 +193,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: Pub
     }, {
         name: "The Water Gate",
         location: "Barnstaple",
@@ -195,7 +202,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: Spoons
     }, {
         name: "Ilfracombe Golf Club",
         location: "Ilfracombe",
@@ -204,7 +211,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: Golf
     }, {
         name: "Tarka Tennis",
         location: "Barnstaple",
@@ -213,7 +220,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: Tennis
     }, {
         name: "Lesuire Center",
         location: "Barnstaple",
@@ -222,7 +229,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: Swimming
     }, {
         name: "Down The Rabbit Hole",
         location: "Barnstaple",
@@ -231,7 +238,7 @@ const Adverts = [
         phone: "01271 867474",
         address: "A399, Ilfracombe, EX34 9SL",
         link: "https://www.watermouthcastle.com/",
-        image: Water
+        image: Bar
     }
 ]
 

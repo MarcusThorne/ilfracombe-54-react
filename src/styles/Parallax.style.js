@@ -145,7 +145,7 @@ export const ParallaxCards = styled.div`
     justify-content: center;
     align-items: center;
     padding: 2rem 4rem;
-    margin-bottom: 55%;
+    background-color: rgba(255,255,255,0.7);
 
     @media(min-width: 520px) {
         flex-direction: column;
@@ -155,6 +155,8 @@ export const ParallaxCards = styled.div`
         margin: auto;
         margin-bottom: 0;
         padding: 1rem 2rem;
+            background-color: transparent;
+
     }
 
     @media(min-width: 720px) {

@@ -19,7 +19,7 @@ export const VideoWrap = styled.div`
 
 
         @media(min-width: 620px) {
-            height: 40rem;
+            height: 65rem;
             width: 72rem;
         }
 
@@ -101,9 +101,11 @@ export const IconContent = styled.div`
     align-items: center;
     padding: 0 1rem;
     margin-top: -2rem;
+    display: none;
 
     @media(min-width: 620px) {
         margin-top: -6rem;
+        display: flex;
     }
 
     p {

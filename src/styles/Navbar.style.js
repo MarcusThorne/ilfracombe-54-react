@@ -70,7 +70,7 @@ export const NavLink = styled(Link)`
         right: 100%;
         bottom: 0;
         background: #D6A449;
-        height: 4px;
+        height: 2.5px;
         -webkit-transition-property: right;
         transition-property: right;
         -webkit-transition-duration: 0.3s;

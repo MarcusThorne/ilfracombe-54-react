@@ -1,19 +1,39 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from 'emailjs-com'
+import {EmailForm, FormButton} from '../styles/Contact.style'
 
 function ContactForm() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('service_zdii2md', 'template_voucpyb', form.current, 'user_iSvLSi2fbEy7yc4nNfReY')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
+        e.target.reset()
+    };
+
     return (
         <div>
-            <h4>Getting in touch with us</h4>
-            <p>To check current availability online please click here. However if you cannot see the availability that you want, check availability or for further details please do not hesitate to telephone us directly or use our contact form on this page.</p>
-
-            <h6>Your Name</h6>
-            <input type="text" />
-
-            <h6>Your Email</h6>
-            <input type="text" />
-
-            <h6>Your Message</h6>
-            <input type="text" />
+            <EmailForm ref={form} onSubmit={sendEmail}>
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="from_name" />
+                </div>
+                <div>
+                    <label>Email <i>(required)</i></label>
+                    <input type="email" name="email" />
+                </div>
+                <div>
+                    <label>Message <i>(required)</i></label>
+                    <textarea name="message" />
+                </div>
+                <FormButton type="submit" value="Send" />
+            </EmailForm>
         </div>
     )
 }
