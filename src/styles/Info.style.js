@@ -24,6 +24,7 @@ export const InfoWrap = styled.div`
 export const GridItem = styled.div`
     margin: 4rem 0;
     transition: 0.5s;
+    padding-top: 4rem;
 
     &:hover {
         transform: scale(1.04);
@@ -52,6 +53,7 @@ export const GridItem = styled.div`
         font-size: 14px;
         max-width: 30rem;
         margin: 1rem auto;
+        margin-bottom: 5rem;
         padding: 0 2rem;
     }
 
@@ -81,7 +83,7 @@ export const InfoTitle = styled.h1`
     background-color: #131B23;
     margin: 0;
     color: white;
-    padding-top: 5rem;
+    padding-top: 6rem;
     font-weight: 500;
     font-size: 38px;
     display: ${props => props.display};

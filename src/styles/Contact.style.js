@@ -8,6 +8,12 @@ export const Heading = styled.div`
 
 export const ContactInfo = styled.div`
   padding: 4rem 2rem;
+
+  @media(min-width: 1000px) {
+    border-right: 1px solid rgba(0,0,0,0.1);
+    margin-right: 4rem;
+    padding-right: 6rem;
+  }
 `
 
 export const EmailForm = styled.form`
