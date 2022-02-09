@@ -54,6 +54,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
         arrows: arrows
     };
 
+    // function to return the correct image folder based on passed values
     const findImages = () => {
         if(floor === 1){
             return(ApartmentOneImages)
@@ -74,6 +75,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
 
     return (
         <CarouselWrap width={width} margin={margin} marginTop={marginTop} >
+            {/* if not on apartment page return a title and sub-title */}
             { !apartmentsPage &&
                 <Title fontSize={fontSize}>
                     <div style={{display: "flex", flexDirection: "column"}}>
@@ -85,12 +87,14 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
 
             <Slider {...settings}>
                 {findImages().map((event, index) =>
+                    // id review is true return the revies
                     review ?
                         <Rev key={index}>
                             <h1>{event.name}</h1>
                             <p><QuoteLeft />{event.said}<QuoteRight /></p>
                         </Rev>
                     :
+                    // else return images
                         <Image key={index} src={event.image} alt="image" />
                 )}
             </Slider>

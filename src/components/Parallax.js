@@ -29,7 +29,7 @@ function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopB
     }, {
       id: 3,
       title: "Enhanced Clean",
-      description: "We've committed to Airbnb’s 5-step enhanced cleaning process. Learn more."
+      description: "We've committed to Airbnb's 5-step enhanced cleaning process. Learn more."
     }
   ]
 
