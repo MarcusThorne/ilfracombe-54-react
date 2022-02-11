@@ -2,6 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 class YoutubeVideo extends React.Component {
+    // youtube video as a background on the activities page
     render() {
         const opts = {
             height: '100%',

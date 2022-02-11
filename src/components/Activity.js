@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Button } from '../styles/Button.style'
 
 function Activity() {
+    // JavaScript to select only adverts based on what button is pressed
     const [show, setShow] = useState(8)
     const [ads, setAds] = useState(Advert)
 

@@ -4,6 +4,7 @@ import { Button } from '../styles/Button.style'
 // import { useState } from 'react'
 
 function Availability({ color, backgroundHoverColor, iconColor }) {
+    // on Submit links to airbnb page that checks if bnb is available on those dates
     const submitForm = () => {
       var apartmentNumber = document.querySelector("#apartmentNumber").value || "34943853";
         var checkIn = document.querySelector("#checkIn").value || "";
@@ -15,6 +16,7 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
         var guests = document.querySelector("#guests").value || "1";
 
+        // builds the link
         var link =
             "https://www.airbnb.co.uk/rooms/" +
             apartmentNumber +
@@ -25,6 +27,7 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
             "&check_out=" +
             checkOut;
 
+        // opens the link built
         window.open(link);
     }
 

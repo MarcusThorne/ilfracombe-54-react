@@ -7,6 +7,7 @@ import About from '../img/ilfracombe.png'
 
 function Home() {
     return (
+        // taking components to build a homepage
         <div style={{width:"100%!important", overflow: "hidden"}}>
             <Parallax height="100vh" tabletHeight="10vh" img={Header} home={true}
             title={<>Ilfracombe <span>No. 54</span></>} subTitle="Three Holiday Apartments" desktopTop="-10%" />

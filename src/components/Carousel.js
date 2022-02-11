@@ -8,6 +8,7 @@ import Reviews from '../components/TestimonialsData'
 
 function Carousel({title, floor, width, margin, padding="30px", subTitle, respond=true, slides=4, fontSize, marginTop, apartmentsPage=false, autoplay=true, arrows=false, review=false}) {
     const responsive = () => {
+      // repsonsive carousel with slick
         var settings = [
             {
                 breakpoint: 1024,
@@ -36,6 +37,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
         return (respond ? settings : false)
     }
 
+    // slick carousel settings
     const settings = {
         dots: false,
         infinite: true,
@@ -54,6 +56,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
         arrows: arrows
     };
 
+    // only select the images for the carousel based on what floor you're on or not on
     const findImages = () => {
         if(floor === 1){
             return(ApartmentOneImages)
@@ -75,6 +78,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
     return (
         <CarouselWrap width={width} margin={margin} marginTop={marginTop} >
             { !apartmentsPage &&
+              // has a title and subtitle if the page is something other than apartments page
                 <Title fontSize={fontSize}>
                     <div style={{display: "flex", flexDirection: "column"}}>
                         <h1>{title}</h1>
@@ -86,11 +90,13 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
             <Slider {...settings}>
                 {findImages().map((event, index) =>
                     review ?
+                      // for reviews only shows name and review
                         <Rev key={index}>
                             <h1>{event.name}</h1>
                             <p><QuoteLeft />{event.said}<QuoteRight /></p>
                         </Rev>
                     :
+                      // else it shows the an image per slide
                         <Image key={index} src={event.image} alt="image" />
                 )}
             </Slider>
