@@ -4,14 +4,9 @@ import { useState } from 'react'
 import { Button } from '../styles/Button.style'
 
 function Activity() {
-<<<<<<< HEAD
-    // JavaScript to select only adverts based on what button is pressed
-    const [show, setShow] = useState(8)
-=======
     // amount of adverts being shown at one time
     const [show, setShow] = useState(12)
     // The current adverst being shown
->>>>>>> 952db948e382607a44fd22d77710f8e11be83e6f
     const [ads, setAds] = useState(Advert)
 
     // increments the amount of adverts being shown when a button is click

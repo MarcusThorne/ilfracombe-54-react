@@ -56,11 +56,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
         arrows: arrows
     };
 
-<<<<<<< HEAD
-    // only select the images for the carousel based on what floor you're on or not on
-=======
     // function to return the correct image folder based on passed values
->>>>>>> 952db948e382607a44fd22d77710f8e11be83e6f
     const findImages = () => {
         if(floor === 1){
             return(ApartmentOneImages)
@@ -102,11 +98,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
                             <p><QuoteLeft />{event.said}<QuoteRight /></p>
                         </Rev>
                     :
-<<<<<<< HEAD
-                      // else it shows the an image per slide
-=======
                     // else return images
->>>>>>> 952db948e382607a44fd22d77710f8e11be83e6f
                         <Image key={index} src={event.image} alt="image" />
                 )}
             </Slider>
