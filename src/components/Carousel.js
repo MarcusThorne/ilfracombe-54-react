@@ -56,7 +56,11 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
         arrows: arrows
     };
 
+<<<<<<< HEAD
     // only select the images for the carousel based on what floor you're on or not on
+=======
+    // function to return the correct image folder based on passed values
+>>>>>>> 952db948e382607a44fd22d77710f8e11be83e6f
     const findImages = () => {
         if(floor === 1){
             return(ApartmentOneImages)
@@ -77,6 +81,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
 
     return (
         <CarouselWrap width={width} margin={margin} marginTop={marginTop} >
+            {/* if not on apartment page return a title and sub-title */}
             { !apartmentsPage &&
               // has a title and subtitle if the page is something other than apartments page
                 <Title fontSize={fontSize}>
@@ -89,6 +94,7 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
 
             <Slider {...settings}>
                 {findImages().map((event, index) =>
+                    // id review is true return the revies
                     review ?
                       // for reviews only shows name and review
                         <Rev key={index}>
@@ -96,7 +102,11 @@ function Carousel({title, floor, width, margin, padding="30px", subTitle, respon
                             <p><QuoteLeft />{event.said}<QuoteRight /></p>
                         </Rev>
                     :
+<<<<<<< HEAD
                       // else it shows the an image per slide
+=======
+                    // else return images
+>>>>>>> 952db948e382607a44fd22d77710f8e11be83e6f
                         <Image key={index} src={event.image} alt="image" />
                 )}
             </Slider>
