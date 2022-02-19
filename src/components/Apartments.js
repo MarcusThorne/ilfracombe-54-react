@@ -55,6 +55,24 @@ function Apartments() {
     ]);
   }
 
+    const bookNow = (apartment) => {
+        const apartmentNumber = () => {
+            if (apartment === "Apartment One") {
+                return "34943853"
+            } else if (apartment === "Apartment Two") {
+                return "23996662"
+            } else {
+                return "34943970"
+            }
+        }
+
+        var link =
+            "https://www.airbnb.co.uk/rooms/" +
+            apartmentNumber()
+
+        window.open(link);
+    }
+
     return (
         <ApartmentsWrap>
             {apartmentData.map((apartment, index) =>
@@ -76,7 +94,7 @@ function Apartments() {
                         <ApartmentText >
                             <p>{apartment.description}</p>
                             <div>From <span>£100 - £120</span> per night</div>
-                            <Button style={{marginTop: "2rem"}} >Book Now</Button>
+                            <Button style={{marginTop: "2rem"}} onClick={() => bookNow(apartment.title)} >Book Now</Button>
                         </ApartmentText>
                         <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
                             <div>
