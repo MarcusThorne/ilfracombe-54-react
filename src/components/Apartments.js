@@ -94,7 +94,7 @@ function Apartments() {
                         </ApartmentInfo>
                         <ApartmentText >
                             <p>{apartment.description}</p>
-                            <div>From <span>£100 - £120</span> per night</div>
+                            <div>From <span>£140 - £160</span> per night</div>
                             <Button style={{marginTop: "2rem"}} onClick={() => bookNow(apartment.title)} >Book Now</Button>
                         </ApartmentText>
 
