@@ -8,6 +8,7 @@ import { useSpring, animated } from 'react-spring'
 import { Link } from 'react-router-dom'
 
 function Parallax({height, img, title, subTitle, home, about, laptopTop, laptopBottom, speed=0.3, bottom, responsiveWidth, desktopTop, responsiveFontSize="60px", border="none"}) {
+  // created my own parallax feature
   const [offsetY, setOffsetY] = useState(0)
   const handleScroll = () => setOffsetY(window.pageYOffset)
 

@@ -1,3 +1,4 @@
+// activities data
 import Tiki from '../img/activities/tiki.jpg'
 import Museum from '../img/activities/museum.jpg'
 import Embassy from '../img/activities/embassy.jpg'

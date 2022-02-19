@@ -29,7 +29,6 @@ function Info({ infoTitle, title, subTitle, image, button, availability, color, 
             <InfoWrap display={display} flexDirection={flexDirection} wrapBackgroundColor={wrapBackgroundColor} >
                 {image ?
                     <>
-
                         {Hygiene.map((h, index) =>
                             <GridItem key={index} itemTitle={itemTitle} responsiveItemTitle={responsiveItemTitle}>
                                 <img src={h.img} alt={h.title} />

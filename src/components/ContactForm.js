@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 import {EmailForm, FormButton} from '../styles/Contact.style'
 
 function ContactForm() {
+    // to send an email via form on website contact page
     const form = useRef();
 
     const sendEmail = (e) => {

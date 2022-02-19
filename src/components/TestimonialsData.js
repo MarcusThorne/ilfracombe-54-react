@@ -1,3 +1,4 @@
+// Real reviews from Colings air bnb
 const Reviews = [
     {
         id: 0,

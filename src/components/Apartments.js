@@ -43,6 +43,7 @@ function Apartments() {
     }
   ])
 
+  // function to show/ hide more info text overlay via toggle boolean
   const toggleInfo = (id) => {
     var index = apartmentData.findIndex(category => category.id === id);
     let category = apartmentData[index];
@@ -96,6 +97,8 @@ function Apartments() {
                             <div>From <span>£100 - £120</span> per night</div>
                             <Button style={{marginTop: "2rem"}} onClick={() => bookNow(apartment.title)} >Book Now</Button>
                         </ApartmentText>
+
+                        {/* hidden info that can be activated by clicking info button */}
                         <HiddenInfo onClick={() => toggleInfo(apartment.id)} display={apartment.toggle ? "flex" : "none"} >
                             <div>
                                 <Cross />
