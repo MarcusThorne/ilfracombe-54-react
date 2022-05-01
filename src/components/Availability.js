@@ -39,14 +39,14 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
                     <Icon rotate="rotate(270deg)" />
                 </AvailabilityTitle>
 
-                <div style={{display: "flex", width: "100%", justifyContent: "space-between", fontSize: "20px", marginTop: "1rem" }} >
+                {/* <div style={{display: "flex", width: "100%", justifyContent: "space-between", fontSize: "20px", marginTop: "1rem" }} >
                     <h6 style={{width: "33%"}}>Which Apartment?</h6>
                     <div style={{display: "flex", justifyContent: "space-between", width:"30%", }}>
                         <h6>From...</h6>
                         <h6>Until</h6>
                     </div>
                     <h6 style={{ width: "33%" }}>How Many?</h6>
-                </div>
+                </div> */}
 
                 <Options>
                     <Option>
