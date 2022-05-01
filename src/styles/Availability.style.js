@@ -50,7 +50,7 @@ export const Options = styled.div`
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
-    margin-top: -1rem;
+    margin-top: 1rem;
     width: 100%;
     max-width: 100rem;
 
