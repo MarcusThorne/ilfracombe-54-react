@@ -9,15 +9,15 @@ function Info({ infoTitle, title, subTitle, image, button, availability, color, 
     const Hygiene = [
     {
       title: "Precautions",
-      description: "As you know, everywhere has been taking there procautions to provide the heighest standard of hygiene possible. We take this precautions very seriously to keep everyone safe. So bare in mind that if we believe our apartments to be a threat all bookings will be canceled until further notice.",
+            description: "As you know, everywhere has been taking precautions to provide the highest standard of hygiene possible. We take these precautions very seriously to keep everyone safe.",
       img: hygieneImg
     }, {
       title: "Hygiene",
-      description: "Hygiene is extremely important to us at ilfracombe no 54, which is why we spent considerable amounts of time cleaning our apartments regularly. During this pandemic we've really upped our game in the cleaning department, everything is wiped down and dis-infected before every visit, so you can rest easy knowing that you're in a completely safe enviroment.",
+            description: "Hygiene is our priority at Ilfracombe number 54, we spend considerable amounts of time cleaning our apartments regularly. During this pandemic we've upped our game in the cleaning department, everything is wiped down and disinfected before every visit, so you can rest easy knowing that you're in a completely safe environment.",
       img: cautionImg
     }, {
       title: "Limitations",
-      description: "The rule of six still applys to our apartments, we ask you not to exceed this number. The surrounding areas are starting to open up and limitations to ilfracombe are starting to ease, so your holiday will be filled with fun as normal.",
+            description: "The surrounding areas are starting to open up and limitations to North Devon are starting to ease, so your holiday will be filled with fun as normal. Countryside and seaside treks await you...",
       img: limitImg
     }
   ]

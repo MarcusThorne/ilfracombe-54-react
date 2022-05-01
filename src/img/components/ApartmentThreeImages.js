@@ -1,6 +1,3 @@
-import Image1 from '../inTheAttic/bathroom.webp'
-import Image2 from '../inTheAttic/bathroom2.webp'
-import Image3 from '../inTheAttic/bathroom3.webp'
 import Image4 from '../inTheAttic/bedroom.webp'
 import Image5 from '../inTheAttic/bedroom2.webp'
 import Image6 from '../inTheAttic/bedroom3.webp'
@@ -27,16 +24,25 @@ import Image26 from '../inTheAttic/stairway2.webp'
 import Image27 from '../inTheAttic/stairway3.webp'
 
 const ApartmentThreeImages = [
-  {
-    id: 1,
-    image: Image1,
-  }, {
-    id: 2,
-    image: Image2,
-  }, {
-    id: 3,
-    image: Image3,
-  }, {
+    {
+        id: 18,
+        image: Image18,
+    }, {
+        id: 19,
+        image: Image19,
+    }, {
+        id: 20,
+        image: Image20,
+    }, {
+        id: 21,
+        image: Image21,
+    }, {
+        id: 22,
+        image: Image22,
+    }, {
+        id: 23,
+        image: Image23,
+    }, {
     id: 4,
     image: Image4,
   }, {
@@ -78,25 +84,7 @@ const ApartmentThreeImages = [
   }, {
     id: 17,
     image: Image17,
-  }, {
-    id: 18,
-    image: Image18,
-  }, {
-    id: 19,
-    image: Image19,
-  }, {
-    id: 20,
-    image: Image20,
-  }, {
-    id: 21,
-    image: Image21,
-  }, {
-    id: 22,
-    image: Image22,
-  }, {
-    id: 23,
-    image: Image23,
-  }, {
+  },{
     id: 24,
     image: Image24,
   }, {

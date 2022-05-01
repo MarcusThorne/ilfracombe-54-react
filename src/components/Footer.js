@@ -48,7 +48,6 @@ function Footer() {
         </Links>
 
         <Copyright>
-            <p>Created By Marcus Thorne</p>
             <p><BiCopyright/>Copyright Ilfracombe .54</p>
         </Copyright>
     </FooterWrap>

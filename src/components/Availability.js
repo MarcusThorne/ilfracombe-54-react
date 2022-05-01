@@ -39,6 +39,15 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
                     <Icon rotate="rotate(270deg)" />
                 </AvailabilityTitle>
 
+                <div style={{display: "flex", width: "100%", justifyContent: "space-between", fontSize: "20px", marginTop: "1rem" }} >
+                    <h6 style={{width: "33%"}}>Which Apartment?</h6>
+                    <div style={{display: "flex", justifyContent: "space-between", width:"30%", }}>
+                        <h6>From...</h6>
+                        <h6>Until</h6>
+                    </div>
+                    <h6 style={{ width: "33%" }}>How Many?</h6>
+                </div>
+
                 <Options>
                     <Option>
                         <select id="apartmentNumber" placeholder="Apartment Number">
@@ -50,11 +59,11 @@ function Availability({ color, backgroundHoverColor, iconColor }) {
 
                     <CheckIn>
                         <Op>
-                            <input type="date" id="checkIn" placeholder="dd/mm/yyyy"/>
+                            <input type="date" id="checkIn" />
                         </Op>
                         <Next />
                         <Op>
-                            <input type="date" id="checkOut" placeholder="dd/mm/yyyy"/>
+                            <input type="date" id="checkOut" />
                         </Op>
                     </CheckIn>
 

@@ -1,5 +1,3 @@
-import Image1 from '../apartment2/bathroom.webp'
-import Image2 from '../apartment2/bathroom2.webp'
 import Image3 from '../apartment2/beach.webp'
 import Image4 from '../apartment2/beach2.webp'
 import Image5 from '../apartment2/bedroom.webp'
@@ -23,13 +21,19 @@ import Image22 from '../apartment2/view.webp'
 import Image23 from '../apartment2/view2.webp'
 
 const ApartmentTwoImages = [
-  {
-    id: 1,
-    image: Image1,
-  }, {
-    id: 2,
-    image: Image2,
-  }, {
+    {
+        id: 15,
+        image: Image15,
+    }, {
+        id: 16,
+        image: Image16,
+    }, {
+        id: 17,
+        image: Image17,
+    }, {
+        id: 18,
+        image: Image18,
+    }, {
     id: 3,
     image: Image3,
   }, {
@@ -65,19 +69,7 @@ const ApartmentTwoImages = [
   }, {
     id: 14,
     image: Image14,
-  }, {
-    id: 15,
-    image: Image15,
-  }, {
-    id: 16,
-    image: Image16,
-  }, {
-    id: 17,
-    image: Image17,
-  }, {
-    id: 18,
-    image: Image18,
-  }, {
+  },{
     id: 19,
     image: Image19,
   }, {
